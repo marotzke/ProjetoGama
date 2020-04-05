@@ -23,9 +23,29 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <script type = "text/javascript">
+      function displayNextImage() {
+          x = (x === images.length - 1) ? 0 : x + 1;
+          document.getElementById("shield").src = images[x];
+      }
+
+      function displayPreviousImage() {
+          x = (x <= 0) ? images.length - 1 : x - 1;
+          document.getElementById("shield").src = images[x];
+      }
+
+      function startTimer() {
+          setInterval(displayNextImage, 2000);
+      }
+
+      var images = [], x = -1;
+      images[0] = "images/face-shield-assemble.svg";
+      images[1] = "images/face-shield.svg";
+  </script>
     
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section" onload="startTimer()">
   
 
   <div id="overlayer"></div>
@@ -53,38 +73,23 @@
       <div class="container">
         <div class="row align-items-center">
           
-          <div class="col-6 col-xl-2">
-            <h1 class="mb-1 site-logo"><a href="index.html" class="h2 mb-1">projeto gama<span class="text-primary">.</span> </a></h1>
+          <div class="col-2 col-xl-1">
+            <img src="images/logo_red.png" alt="Image" class="img-fluid cover-img" style="max-width: 50%">
+          </div>
+          <div class="col-4 col-xl-1">
+            <h1 class="mb-1 site-logo"><a href="index.html" class="h2 mb-1">gama<span class="text-primary">.</span> </a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li class="has-children">
-                  <a href="#about-section" class="nav-link">About</a>
-                  <ul class="dropdown">
-                    <li><a href="#trainers-section" class="nav-link">Trainers</a></li>
-                    <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
-                    <li><a href="#faq-section" class="nav-link">FAQ</a></li>
-                    <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
-                    <li><a href="#gallery-section" class="nav-link">Gallery</a></li>
-                    <li><a href="#blog-section" class="nav-link">Blog</a></li>
-                    <li class="has-children">
-                      <a href="#">More Links</a>
-                      <ul class="dropdown">
-                        <li><a href="#">Menu One</a></li>
-                        <li><a href="#">Menu Two</a></li>
-                        <li><a href="#">Menu Three</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                
-                <li><a href="#trainers-section" class="nav-link">Trainers</a></li>
-                <li><a href="#services-section" class="nav-link">Services</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                <li><a href="#home-section" class="nav-link">HOME</a></li>
+                <li><a href="#mission-section" class="nav-link">NOSSA MISSÃO</a></li>
+                <li><a href="#mask-section" class="nav-link">AS VISEIRAS</a></li>
+                <li><a href="#situation-section" class="nav-link">A SITUAÇÃO</a></li>
+                <li><a href="#doubts-section" class="nav-link">DÚVIDAS</a></li>
+                <li><a href="#contact-section" class="nav-link">CONTATO</a></li>
               </ul>
             </nav>
           </div>
@@ -103,26 +108,30 @@
         <div class="row">
           <div class="col-md-6 align-self-center text-center text-md-left">
             <div class="intro-text">
-              <h1 style="font-size: 40pt;">Grupo de Apoio <span class="d-md-block">aos Médicos em Ação</span></h1>
-              <p class="mb-4">We always try to provide your dog the best<span class="d-block"> services.</p>
+              <!-- <h1>Grupo de Apoio <span class="d-md-block">aos Médicos em Ação</span></h1> -->
+              <img src="images/logo_completo.png" alt="Image" class="img-fluid cover-img" style="max-width:70%; margin-bottom: 10px">
+              <!-- <p class="mb-4">Produzimos Equipamentos de proteção individual para nossos heróis e heroínas nos hospitais.</p> -->
+              
+              <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#ed163c;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Precisamos de viseiras! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+            <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Quero ajudar! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
             </div>
           </div>
-          <div class="col-md-6 align-self-end text-center text-md-right">
-            <!-- <img src="images/dogger_img_1.png" alt="Image" class="img-fluid cover-img"> -->
-            <div class="typeform-widget" data-url="https://matheusmarotzke.typeform.com/to/I482TP" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=I482TP&utm_source=typeform.com-01E52XJRRZQ1JVZ835DCEKD3T0-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+          <div class="col-md-6 align-self-center text-center text-md-left">
+            <img src="images/gama2.png" alt="Image" class="img-fluid cover-img">
+            
           </div>
         </div>
       </div>
     </section> 
 
-    <section class="site-section">
+    <section class="site-section" id="mission-section">
       <div class="container">
         <div class="row justify-content-center" data-aos="fade-up">
           <div class="col-lg-6 text-center heading-section mb-5">
-            <div class="paws">
-              <span class="icon-paw"></span>
+            <div>
+                <img src="images/logo_text.png" alt="Image" class="img-fluid cover-img" style="max-width: 5%">
             </div>
-            <h2 class="text-black mb-2">Welcome to Dogger Pet Care</h2>
+            <h2 class="text-black mb-2">Nossa <strong style="color:#ed163c">missão</strong></h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
           </div>
         </div>
@@ -131,14 +140,14 @@
           <div class="col-12">
             <div class="row">
               <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2" data-aos="fade-right">
-                <a href="#" class="hover-1">
-                  <img src="images/dogger_img_sm_3.jpg" alt="Image" class="img-fluid">
-                </a>
+                <div class="hover-1">
+                  <img src="images/gama_photo_doctors.png" alt="Image" class="img-fluid">
+                </div>
               </div>
               <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1" data-aos="fade-left">
-                <h2 class="text-black">Love &amp; Care</h2>
+                <h2 class="text-black">Hospitais &amp; Clínicas</h2>
                 <p class="mb-4">Far far away, behind the word mountains, Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                <p><a href="#" class="btn btn-primary">Read More</a></p>
+                <p><a href="#" class="btn btn-primary">Precisamos de apoio!</a></p>
               </div>
             </div>
           </div>
@@ -148,46 +157,31 @@
           <div class="col-12">
             <div class="row">
               <div class="mb-4 mb-lg-0 col-lg-6"  data-aos="fade-left">
-                <a href="#" class="hover-1">
-                  <img src="images/dogger_img_sm_1.jpg" alt="Image" class="img-fluid">
-                </a>
+                <div class="hover-1">
+                  <img src="images/gama_photo_sign.png" alt="Image" class="img-fluid">
+                </div>
               </div>
               <div class="col-lg-5 ml-auto align-self-center"  data-aos="fade-right">
-                <h2 class="text-black">Fearsome</h2>
+                <h2 class="text-black">Determinados à ajudar</h2>
                 <p class="mb-4">Far far away, behind the word mountains, Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                <p><a href="#" class="btn btn-primary">Read More</a></p>
+                <p><a href="#" class="btn btn-primary">Quero apoiar!</a></p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="row hover-1-wrap">
-          <div class="col-12">
-            <div class="row">
-              <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2" data-aos="fade-right">
-                <a href="#" class="hover-1">
-                  <img src="images/dogger_img_sm_2.jpg" alt="Image" class="img-fluid">
-                </a>
-              </div>
-              <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1" data-aos="fade-left">
-                <h2 class="text-black">Beautiful</h2>
-                <p class="mb-4">Far far away, behind the word mountains, Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                <p><a href="#" class="btn btn-primary">Read More</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
+  
 
-    <section class="site-section" id="about-section">
+    <section class="site-section" id="mask-section">
       <div class="container">
         <div class="row justify-content-center" data-aos="fade-up">
           <div class="col-lg-5 align-self-center mr-auto text-left heading-section mb-5">
-            <div class="paws ml-4">
-              <span class="icon-paw"></span>
+            <div class="ml-4">
+                <img src="images/logo_red.png" alt="Image" class="img-fluid cover-img" style="max-width: 5%">
             </div>
-            <h2 class="text-black mb-3">About Us</h2>
+            <h2 class="text-black mb-3">AS <strong style="color:#ed163c">VISEIRAS</strong></h2>
             <p class="lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
             <p class="text-muted mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
             <ul class="list-unstyled ul-paw primary mb-0">
@@ -198,201 +192,127 @@
             
           </div>
           <div class="col-lg-6 text-left heading-section mb-5"  data-aos="fade-up" data-aos-delay="100">
-            <a  data-fancybox data-ratio="1.5" href="https://vimeo.com/317571768" class="video-img">
-              <span class="play">
+            <!-- <a  data-fancybox data-ratio="1.5" href="https://vimeo.com/317571768" class="video-img"> -->
+              <!-- <span class="play">
                 <span class="icon-play"></span>
-              </span>
-              <img src="images/dogger_img_big_1.jpg" alt="Image" class="img-fluid">
-            </a>
+              </span> -->
+              <img id="shield" src="images/face-shield.svg" alt="Image" class="img-fluid"/>
+              
+              <!-- <img src="images/face-shield.svg" alt="Image" class="img-fluid"> -->
+            <!-- </a> -->
           </div>
         </div>
       </div>
     </section>
 
-    <section class="site-section bg-primary trainers" id="trainers-section">
-      <div class="container">
-        <div class="row justify-content-center" data-aos="fade-up">
-          <div class="col-lg-7 text-center heading-section mb-5">
-            <div class="paws white">
-              <span class="icon-paw"></span>
+    <section class="site-section " id="situation-section">
+        <div class="container">
+          <div class="row justify-content-center" data-aos="fade-up">
+            <div class="col-lg-6 text-center heading-section mb-5">
+              <div>
+                  <img src="images/logo_red.png" alt="Image" class="img-fluid cover-img" style="max-width: 5%">
+              </div>
+              <h2 class="text-black mb-2">A <strong style="color:#ed163c">SITUAÇÃO</strong></h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             </div>
-            <h2 class="mb-2 heading">Our Trainers</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="">
+              
+              <div class="block_service">
+                <img src="images/020-covid-19.svg" alt="Image mb-5">
+                <h3>CRISE NA DISTRIBUÇÃO DE RECURSOS</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              </div>
+  
+            </div>
+            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="100">
+              <div class="block_service">
+                <img src="images/mask_side.svg" alt="Image mb-5">
+                <h3>FALTA DE EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAIS (EPIs)</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200">
+              <div class="block_service">
+                <img src="images/013-stayhome.svg" alt="Image mb-5">
+                <h3>FAÇA SUA PARTE</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              </div>
+            </div>
+  
+  
+            <!-- <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="">
+              
+              <div class="block_service">
+                <img src="images/dogger_veterinary.svg" alt="Image mb-5">
+                <h3>Dog First Aid</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              </div>
+  
+            </div>
+            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="100">
+              <div class="block_service">
+                <img src="images/dogger_dryer.svg" alt="Image mb-5">
+                <h3>Dog Dryer</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200">
+              <div class="block_service">
+                <img src="images/dogger_veterinarian.svg" alt="Image mb-5">
+                <h3>Expert Veterinarian</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+              </div>
+            </div> -->
+              
           </div>
         </div>
-        <div class="row">
-         
-          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="">
-            <div class="trainer">
-              <figure>
-              <img src="images/dogger_trainer_1.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="px-md-3">
-                <h3>Jessica White</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <ul class="ul-social-circle">
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="trainer">
-              <figure>
-              <img src="images/dogger_trainer_2.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="px-md-3">
-                <h3>Valerie Elash</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <ul class="ul-social-circle">
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      </section>
 
-          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200">
-            <div class="trainer">
-              <figure>
-              <img src="images/dogger_trainer_3.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="px-md-3">
-                <h3>Alicia Jones</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <ul class="ul-social-circle">
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section" id="pricing-section">
-      <div class="container">
-        <div class="row justify-content-center" data-aos="fade-up">
-          <div class="col-lg-7 text-center heading-section mb-5">
-            <div class="paws">
-              <span class="icon-paw"></span>
-            </div>
-            <h2 class="mb-2 text-black heading">Pricing Table</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4 bg-primary p-3 p-md-5" data-aos="fade-up" data-aos-delay="">
-            
-
-            <div class="pricing">
-              <h3 class="text-center text-white text-uppercase">Basic</h3>
-              <div class="price text-center mb-4 ">
-                <span><span>$47</span> / year</span>
-              </div>
-              <ul class="list-unstyled ul-check success mb-5">
-                
-                <li>Officia quaerat eaque neque</li>
-                <li>Possimus aut consequuntur incidunt</li>
-                <li class="remove">Lorem ipsum dolor sit amet</li>
-                <li class="remove">Consectetur adipisicing elit</li>
-                <li class="remove">Dolorum esse odio quas architecto sint</li>
-              </ul>
-              <p class="text-center">
-                <a href="#" class="btn btn-secondary">Buy Now</a>
-              </p>
-            </div>
-
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4 bg-dark  p-3 p-md-5" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing">
-              <h3 class="text-center text-white text-uppercase">Premium</h3>
-              <div class="price text-center mb-4 ">
-                <span><span>$250</span> / year</span>
-              </div>
-              <ul class="list-unstyled ul-check success mb-5">
-                
-                <li>Officia quaerat eaque neque</li>
-                <li>Possimus aut consequuntur incidunt</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Consectetur adipisicing elit</li>
-                <li class="remove">Dolorum esse odio quas architecto sint</li>
-              </ul>
-              <p class="text-center">
-                <a href="#" class="btn btn-primary">Buy Now</a>
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4 bg-primary  p-3 p-md-5" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing">
-              <h3 class="text-center text-white text-uppercase">Professional</h3>
-              <div class="price text-center mb-4 ">
-                <span><span>$850</span> / year</span>
-              </div>
-              <ul class="list-unstyled ul-check success mb-5">
-                
-                <li>Officia quaerat eaque neque</li>
-                <li>Possimus aut consequuntur incidunt</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Consectetur adipisicing elit</li>
-                <li>Dolorum esse odio quas architecto sint</li>
-              </ul>
-              <p class="text-center">
-                <a href="#" class="btn btn-secondary">Buy Now</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section" id="faq-section">
+    <section class="site-section" id="doubts-section">
       <div class="container" id="accordion">
         <div class="row justify-content-center" data-aos="fade-up">
           <div class="col-lg-6 text-center heading-section mb-5">
-            <div class="paws">
-              <span class="icon-paw"></span>
+            <div>
+                <img src="images/logo_red.png" alt="Image" class="img-fluid cover-img" style="max-width: 5%">
             </div>
-            <h2 class="text-black mb-2">Frequently Ask Questions</h2>
+            <h2 class="text-black mb-2"><strong style="color:#ed163c">Dúvidas</strong> frequentes</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
           </div>
         </div>
         <div class="row accordion justify-content-center block__76208">
           <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0" data-aos="fade-up"  data-aos-delay="">
-            <img src="images/dogger_img_sm_1.jpg" alt="Image" class="img-fluid rounded">
+            <img src="images/logo_red_text.png" alt="Image" class="img-fluid rounded" style="max-width: 75%">
           </div>
           <div class="col-lg-5 mr-auto order-lg-1" data-aos="fade-up"  data-aos-delay="100">
             <div class="accordion-item">
               <h3 class="mb-0 heading">
-                <a class="btn-block" data-toggle="collapse" href="#collapseFive" role="button" aria-expanded="true" aria-controls="collapseFive">Should I stop letting my dog sleep with me at night?<span class="icon"></span></a>
+                <a class="btn-block" data-toggle="collapse" href="#collapseFive" role="button" aria-expanded="true" aria-controls="collapseFive">Como posso fazer parte do projeto?<span class="icon"></span></a>
               </h3>
               <div id="collapseFive" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="body-text">
                   <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                  <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Quero ajudar! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
                 </div>
               </div>
             </div> <!-- .accordion-item -->
 
             <div class="accordion-item">
               <h3 class="mb-0 heading">
-                <a class="btn-block" data-toggle="collapse" href="#collapseSix" role="button" aria-expanded="false" aria-controls="collapseSix">Is it okay to dress up your dog?<span class="icon"></span></a>
+                <a class="btn-block" data-toggle="collapse" href="#collapseSix" role="button" aria-expanded="false" aria-controls="collapseSix">Porque <strong>viseiras</strong> e não máscaras?<span class="icon"></span></a>
               </h3>
               <div id="collapseSix" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="body-text">
                   <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                  <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#ed163c;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Precisamos de viseiras! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
                 </div>
               </div>
             </div> <!-- .accordion-item -->
 
             <div class="accordion-item">
               <h3 class="mb-0 heading">
-                <a class="btn-block" data-toggle="collapse" href="#collapseSeven" role="button" aria-expanded="false" aria-controls="collapseSeven">Why do dogs like belly rubs so much?<span class="icon"></span></a>
+                <a class="btn-block" data-toggle="collapse" href="#collapseSeven" role="button" aria-expanded="false" aria-controls="collapseSeven">Como é feita a distribuição para os hospitais?<span class="icon"></span></a>
               </h3>
               <div id="collapseSeven" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="body-text">
@@ -403,7 +323,7 @@
 
             <div class="accordion-item">
               <h3 class="mb-0 heading">
-                <a class="btn-block" data-toggle="collapse" href="#collapseEight" role="button" aria-expanded="false" aria-controls="collapseEight">Is a warm dry nose a sign of illness in dogs?<span class="icon"></span></a>
+                <a class="btn-block" data-toggle="collapse" href="#collapseEight" role="button" aria-expanded="false" aria-controls="collapseEight">Quem está por trás do <strong>Projeto Gama</strong>?<span class="icon"></span></a>
               </h3>
               <div id="collapseEight" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="body-text">
@@ -419,354 +339,12 @@
       </div>
     </section>
 
-    <section class="site-section bg-light block-13" id="testimonials-section" data-aos="fade">
-      <div class="container">
-        
-        <div class="row justify-content-center" data-aos="fade-up">
-          <div class="col-lg-6 text-center heading-section mb-5">
-            <div class="paws">
-              <span class="icon-paw"></span>
-            </div>
-            <h2 class="text-black mb-2">Happy Customers</h2>
-          </div>
-        </div>
-        <div  data-aos="fade-up" data-aos-delay="200">
-          <div class="owl-carousel nonloop-block-13">
-            <div>
-              <div class="block-testimony-1 text-center">
-                
-                <blockquote class="mb-4">
-                  <p>&ldquo;The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.&rdquo;</p>
-                </blockquote>
 
-                <figure>
-                  <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
-                </figure>
-                <h3 class="font-size-20 text-black">Ricky Fisher</h3>
-              </div>
-            </div>
-
-            <div>
-              <div class="block-testimony-1 text-center">
-
-                
-
-                <blockquote class="mb-4">
-                  <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.&rdquo;</p>
-                </blockquote>
-
-                <figure>
-                  <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
-                </figure>
-                <h3 class="font-size-20 mb-4 text-black">Ken Davis</h3>
-
-                
-              </div>
-            </div>
-
-            <div>
-              <div class="block-testimony-1 text-center">
-                
-
-                <blockquote class="mb-4">
-                  <p>&ldquo;A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
-                </blockquote>
-
-                <figure>
-                  <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
-                </figure>
-                <h3 class="font-size-20 text-black">Mellisa Griffin</h3>
-
-                
-              </div>
-            </div>
-
-            <div>
-              <div class="block-testimony-1 text-center">
-
-                
-
-                <blockquote class="mb-4">
-                  <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-                </blockquote>
-
-                <figure>
-                  <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
-                </figure>
-                <h3 class="font-size-20 mb-4 text-black">Robert Steward</h3>
-
-                
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section" id="gallery-section">
-      <div class="container-fluid">
-        <div class="row justify-content-center" data-aos="fade-up">
-          <div class="col-lg-6 text-center heading-section mb-5">
-            <div class="paws">
-              <span class="icon-paw"></span>
-            </div>
-            <h2 class="text-black mb-2">Photo Gallery</h2>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/dogger_img_sm_1.jpg" data-fancybox="gal"><img src="images/dogger_img_sm_1.jpg" alt="Image" class="img-fluid"></a>
-
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/dogger_img_sm_2.jpg" data-fancybox="gal"><img src="images/dogger_img_sm_2.jpg" alt="Image" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/dogger_img_sm_3.jpg" data-fancybox="gal"><img src="images/dogger_img_sm_3.jpg" alt="Image" class="img-fluid"></a>
-
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/dogger_img_sm_4.jpg" data-fancybox="gal"><img src="images/dogger_img_sm_4.jpg" alt="Image" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/dogger_img_sm_5.jpg" data-fancybox="gal"><img src="images/dogger_img_sm_5.jpg" alt="Image" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/dogger_img_sm_6.jpg" data-fancybox="gal"><img src="images/dogger_img_sm_6.jpg" alt="Image" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/dogger_img_sm_1.jpg" data-fancybox="gal"><img src="images/dogger_img_sm_1.jpg" alt="Image" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/dogger_img_sm_2.jpg" data-fancybox="gal"><img src="images/dogger_img_sm_2.jpg" alt="Image" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/dogger_img_sm_3.jpg" data-fancybox="gal"><img src="images/dogger_img_sm_3.jpg" alt="Image" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/dogger_img_sm_4.jpg" data-fancybox="gal"><img src="images/dogger_img_sm_4.jpg" alt="Image" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/dogger_img_sm_5.jpg" data-fancybox="gal"><img src="images/dogger_img_sm_5.jpg" alt="Image" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/dogger_img_sm_6.jpg" data-fancybox="gal"><img src="images/dogger_img_sm_6.jpg" alt="Image" class="img-fluid"></a>
-
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="site-section" id="blog-section">
-      <div class="container">
-        <div class="row justify-content-center" data-aos="fade-up">
-          <div class="col-lg-6 text-center heading-section mb-5">
-            <div class="paws">
-              <span class="icon-paw"></span>
-            </div>
-            <h2 class="text-black mb-2">Dogger Blog</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-4" data-aos="fade-up"  data-aos-delay="">
-            <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <a href="single.html"><img src="images/dogger_img_sm_1.jpg" alt="Image" class="img-fluid"></a>
-              </figure>
-              <div class="blog-entry-text">
-                <h3><a href="single.html">5 Things You Need To Know About Dog Massage</a></h3>
-                <span class="post-meta mb-3 d-block">April 17, 2019</span>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p><a href="#" class="">Read More..</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4" data-aos="fade-up"  data-aos-delay="100">
-            <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <a href="single.html"><img src="images/dogger_img_sm_2.jpg" alt="Image" class="img-fluid"></a>
-              </figure>
-              <div class="blog-entry-text">
-                <h3><a href="single.html">5 Things You Need To Know About Dog Massage</a></h3>
-                <span class="post-meta mb-3 d-block">April 17, 2019</span>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p><a href="#" class="">Read More..</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4" data-aos="fade-up"  data-aos-delay="">
-            <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <a href="single.html"><img src="images/dogger_img_sm_3.jpg" alt="Image" class="img-fluid"></a>
-              </figure>
-              <div class="blog-entry-text">
-                <h3><a href="single.html">5 Things You Need To Know About Dog Massage</a></h3>
-                <span class="post-meta mb-3 d-block">April 17, 2019</span>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p><a href="#" class="">Read More..</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4" data-aos="fade-up"  data-aos-delay="100">
-            <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <a href="single.html"><img src="images/dogger_img_sm_1.jpg" alt="Image" class="img-fluid"></a>
-              </figure>
-              <div class="blog-entry-text">
-                <h3><a href="single.html">5 Things You Need To Know About Dog Massage</a></h3>
-                <span class="post-meta mb-3 d-block">April 17, 2019</span>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p><a href="#" class="">Read More..</a></p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="site-section " id="services-section">
-      <div class="container">
-        <div class="row justify-content-center" data-aos="fade-up">
-          <div class="col-lg-6 text-center heading-section mb-5">
-            <div class="paws">
-              <span class="icon-paw"></span>
-            </div>
-            <h2 class="text-black mb-2">Our Services</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="">
-            
-            <div class="block_service">
-              <img src="images/dogger_checkup.svg" alt="Image mb-5">
-              <h3>Dog Checkup</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            </div>
-
-          </div>
-          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="100">
-            <div class="block_service">
-              <img src="images/dogger_dermatology.svg" alt="Image mb-5">
-              <h3>Dog Dermatology</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200">
-            <div class="block_service">
-              <img src="images/dogger_bones.svg" alt="Image mb-5">
-              <h3>For Strong Teeth</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="">
-            
-            <div class="block_service">
-              <img src="images/dogger_veterinary.svg" alt="Image mb-5">
-              <h3>Dog First Aid</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            </div>
-
-          </div>
-          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="100">
-            <div class="block_service">
-              <img src="images/dogger_dryer.svg" alt="Image mb-5">
-              <h3>Dog Dryer</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200">
-            <div class="block_service">
-              <img src="images/dogger_veterinarian.svg" alt="Image mb-5">
-              <h3>Expert Veterinarian</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            </div>
-          </div>
-            
-        </div>
-      </div>
-    </section>
 
     
     
-    <section class="" id="contact-section">
-      <div class="container">
-        <div class="row no-gutters">
-          <div class="col-lg-6 bg-primary">
-            <form action="#" class="p-5 contact-form">
-              
-              <h2 class="h4 mb-5 heading">Contact Form</h2> 
-
-              <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control">
-                </div>
-                <div class="col-md-6">
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-                
-                <div class="col-md-12">
-                  <label for="email">Email</label> 
-                  <input type="email" id="email" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-                
-                <div class="col-md-12">
-                  <label for="subject">Subject</label> 
-                  <input type="subject" id="subject" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label for="message">Message</label> 
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <input type="submit" value="Send Message" class="btn btn-dark btn-md text-white">
-                </div>
-              </div>
-
-  
-            </form>
-          </div>
-          <div class="col-lg-6 bg-secondary">
-            <div class="row justify-content-center align-items-center h-100">
-              <div class="col-lg-6 text-center heading-section mb-5 align-self-center">
-                <div class="paws">
-                  <span class="icon-paw"></span>
-                </div>
-                <h2 class="text-white mb-5">Contact Us</h2>
-                <ul class="list-unstyled text-left address">
-                  <li>
-                    <span class="d-block">Address:</span>
-                    <p>Melbourne St,South Birbane 4101 Austraila</p>
-                  </li>
-                  <li>
-                    <span class="d-block">Phone:</span>
-                    <p>+(000) 123 4567 89</p>
-                  </li>
-                  <li>
-                    <span class="d-block">Email:</span>
-                    <p>info@yourdomain.com</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     
-    
-    <footer class="site-footer">
+    <footer class="site-footer" id="contact-section">
       <div class="container">
         <div class="row">
           <div class="col-md-9">
@@ -779,7 +357,7 @@
                 <h2 class="footer-heading mb-4">Quick Links</h2>
                 <ul class="list-unstyled">
                   <li><a href="#about-section" class="smoothscroll">About Us</a></li>
-                  <li><a href="#trainers-section" class="smoothscroll">Trainers</a></li>
+                  <li><a href="#mission-section" class="smoothscroll">Trainers</a></li>
                   <li><a href="#services-section" class="smoothscroll">Services</a></li>
                   <li><a href="#testimonials-section" class="smoothscroll">Testimonials</a></li>
                   <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
@@ -788,22 +366,9 @@
               <div class="col-md-3">
                 <h2 class="footer-heading mb-4">Follow Us</h2>
                 <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
                 <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
               </div>
             </div>
-          </div>
-          <div class="col-md-3">
-            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
-            <form action="#" method="post" class="footer-subscribe">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary text-black" type="button" id="button-addon2">Send</button>
-                </div>
-              </div>
-            </form>
           </div>
         </div>
         <div class="row pt-5 mt-5 text-center">
@@ -811,7 +376,7 @@
             <div class="border-top pt-5">
               <p class="copyright"><small>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright Projeto Gama &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
         
             </div>
@@ -834,14 +399,6 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
-  <script>
-        window.prismic = {
-          endpoint: 'https://projeto-gama.cdn.prismic.io/api/v2'
-        };
-      </script>
-      <script type="text/javascript" src="https://static.cdn.prismic.io/prismic.min.js?new=true"></script>
-
-  
   <script src="js/main.js"></script>
 
   
