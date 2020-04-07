@@ -1,52 +1,55 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <title>Projeto Gama</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
-    <link rel='icon' href='favicon/favicon.ico' type='image/x-icon' >
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700, 900|Vollkorn:400i" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+<head>
+  <title>Projeto Gama</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel='icon' href='favicon/favicon.ico' type='image/x-icon'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700, 900|Vollkorn:400i" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 
-    <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aos.css">
 
-    <script type = "text/javascript">
-      function displayNextImage() {
-          x = (x === images.length - 1) ? 0 : x + 1;
-          document.getElementById("shield").src = images[x];
-      }
+  <link rel="stylesheet" href="css/style.css">
 
-      function displayPreviousImage() {
-          x = (x <= 0) ? images.length - 1 : x - 1;
-          document.getElementById("shield").src = images[x];
-      }
+  <script type="text/javascript">
+    function displayNextImage() {
+      x = (x === images.length - 1) ? 0 : x + 1;
+      document.getElementById("shield").src = images[x];
+    }
 
-      function startTimer() {
-          setInterval(displayNextImage, 2000);
-      }
+    function displayPreviousImage() {
+      x = (x <= 0) ? images.length - 1 : x - 1;
+      document.getElementById("shield").src = images[x];
+    }
 
-      var images = [], x = -1;
-      images[0] = "images/face-shield-assemble.svg";
-      images[1] = "images/face-shield.svg";
+    function startTimer() {
+      setInterval(displayNextImage, 2000);
+    }
+
+    var images = [],
+      x = -1;
+    images[0] = "images/face-shield-assemble.svg";
+    images[1] = "images/face-shield.svg";
   </script>
-    
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section" onload="startTimer()">
-  
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section" onload="startTimer()">
+
 
   <div id="overlayer"></div>
   <div class="loader">
@@ -66,19 +69,15 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-   
-    
-    <header class="site-navbar js-sticky-header site-navbar-target" role="banner" >
+
+
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
       <div class="container">
         <div class="row align-items-center">
-          
+
           <div class="col-2 col-xl-1">
-            <img src="images/logo_red.png" alt="Image" class="img-fluid cover-img" style="max-width: 50%">
-          </div>
-          <div class="col-4 col-xl-1">
-              <img src="images/logo_text.png" alt="Image" class="img-fluid cover-img" style="max-width: 25%">
-            <!-- <h1 class="mb-1 site-logo"><a href="index.html" class="h2 mb-1">gama<span class="text-primary">.</span> </a></h1> -->
+            <img src="images/icone_gama.png" alt="Image" class="img-fluid cover-img" style="max-width: 50%">
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -86,318 +85,205 @@
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="#home-section" class="nav-link">HOME</a></li>
-                <li><a href="#mission-section" class="nav-link">NOSSA MISSÃO</a></li>
-                <li><a href="#mask-section" class="nav-link">AS VISEIRAS</a></li>
-                <li><a href="#situation-section" class="nav-link">A SITUAÇÃO</a></li>
-                <li><a href="#doubts-section" class="nav-link">DÚVIDAS</a></li>
-                <li><a href="#contact-section" class="nav-link">CONTATO</a></li>
+                <li><a href="#mission-section" class="nav-link">QUEM SOMOS?</a></li>
+                <li><a href="#work-section" class="nav-link">NOSSO TRABALHO</a></li>
+                <li><a href="#mask-section" class="nav-link">A MÁSCARA</a></li>
+                <li><a href="#help-section" class="nav-link">QUER AJUDAR?</a></li>
               </ul>
             </nav>
-            
           </div>
 
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+          <div class="col-10 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#"
+              class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
 
         </div>
       </div>
-        <div class="alert" style="text-align: center;">
+      <!-- <div class="alert" style="text-align: center;">
           <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
           <a href="#mask-section" class="smoothscroll" style="color:white"><strong>Atenção!</strong> precisamos de matéria prima para proteção frontal das viseiras.</a>
-        </div>      
+        </div>       -->
     </header>
 
-  
-    <section class="site-blocks-cover overflow-hidden bg-light">
+    
+
+
+    <section class="site-blocks-cover overflow-hidden bg-red">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 align-self-center text-center text-md-left">
+          <div class="col-md-12 align-self-center text-center text-md-center">
             <div class="intro-text">
               <!-- <h1>Grupo de Apoio <span class="d-md-block">aos Médicos em Ação</span></h1> -->
-              <img src="images/logo_completo.png" alt="Image" class="img-fluid cover-img" style="max-width:70%; margin-bottom: 10px">
+              <img src="images/GAMA_LOGO_BRANCO.svg" alt="Image" class="img-fluid cover-img"
+                style="max-width:70%;"><br><br>
+              <img src="images/down.svg" alt="Image" class="img-fluid cover-img" style="max-width:2%">
+
               <!-- <p class="mb-4">Produzimos Equipamentos de proteção individual para nossos heróis e heroínas nos hospitais.</p> -->
-              
-              <p>Estamos produzindo Equipamentos de Proteção Individual (EPIs) e <strong style="color:#ed163c">DOANDO</strong> para os hospitais/clínicas que estão batalhando por todos nós.</p>
-              <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/tJdUoO" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#ed163c;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Precisamos de viseiras!</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>              
-              <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Quero apoiar! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+
+              <!-- <p>Estamos produzindo Equipamentos de Proteção Individual (EPIs) e <strong style="color:#ed163c">DOANDO</strong> para os hospitais/clínicas que estão batalhando por todos nós.</p> -->
+              <!-- <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/tJdUoO" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#ed163c;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Preciso de viseiras!</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>              
+              <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Quero apoiar! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
             </div>
           </div>
-          <div id="gama" class="col-md-6 align-self-center text-center text-md-left">
-            <img src="images/gama2.png" alt="Image" class="img-fluid cover-img" style="max-width: 75%">
-          </div>
+
+          <!-- <div id="gama" class="col-md-6 align-self-center text-center text-md-left"> -->
+          <!-- <img src="images/gama2.png" alt="Image" class="img-fluid cover-img" style="max-width: 75%"> -->
+          <!-- </div> -->
         </div>
       </div>
-    </section> 
+    </section>
 
     <section class="site-section" id="mission-section">
       <div class="container">
         <div class="row justify-content-center" data-aos="fade-up">
           <div class="col-lg-6 text-center heading-section mb-5">
             <div>
-                <img src="images/logo_text.png" alt="Image" class="img-fluid cover-img" style="max-width: 5%">
+              <img src="images/ícone_gama_vermelho.png" alt="Image" class="img-fluid cover-img"
+                style="max-width: 5%;margin-bottom: 20px">
             </div>
-            <h2 class="text-black mb-2">Nossa <strong style="color:#ed163c">missão</strong></h2>
-            <h3 class="text-black mb-2">Tudo que é produzido neste projeto é <strong style="color:#ed163c">100% doado!</strong> aos hospitais e clínicas</h3>
-            <p>Apoiar no momento de crise. Ajudar com o que podemos. <br>Protegendo os médicos. Para que eles possam seguir nos protegendo.</p>
+            <h2 class="text-black mb-2">QUEM SOMOS?</strong></h2>
+            <p>Apoiar no momento de crise. Ajudar com o que podemos. <br>Protegendo os médicos. Para que eles possam
+              seguir nos protegendo.</p>
           </div>
         </div>
-
-        <div class="row hover-1-wrap mb-5 mb-lg-0">
-          <div class="col-12">
-            <div class="row">
-              <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2" data-aos="fade-right">
-                <div class="hover-1">
-                  <img src="images/gama_photo_doctors.png" alt="Image" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1" data-aos="fade-up">
-                <h2 class="text-black">Hospitais &amp; Clínicas</h2>
-                <p class="mb-4">Neste momento de crise hospitais estão com falta de recursos, muitas vezes porque não há opção para onde recorrer.<strong> Estamos aqui para ajudar.</strong></p>
-                <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/tJdUoO" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#ed163c;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Precisamos de viseiras! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-                <p class="mb-4"><strong> SÃO DOAÇÕES!</strong></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row hover-1-wrap mb-5 mb-lg-0">
-          <div class="col-12">
-            <div class="row">
-              <div class="mb-4 mb-lg-0 col-lg-6"  data-aos="fade-up">
-                <div class="hover-1">
-                  <img src="images/gama_photo_sign.png" alt="Image" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-lg-5 ml-auto align-self-center"  data-aos="fade-right">
-                <h2 class="text-black">Determinados à ajudar</h2>
-                <p class="mb-4">Se você tem vontade de ajudar,<strong> junte-se à nós!</strong> Temos diversas frentes que precisam de apoio. Se não puder apoiar com seu esforço direto, precisamo de recursos para comprar material, <strong>faça uma doação!</strong></p>
-                <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Quero apoiar! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
-  
+
+    <!-- Container element -->
+    <div class="parallax1"></div>
+
+    <section class="site-section" id="work-section">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-lg-6 text-center heading-section mb-5">
+            <div>
+              <img src="images/ícone_gama_vermelho.png" alt="Image" class="img-fluid cover-img"
+                style="max-width: 5%; margin-bottom: 20px">
+            </div>
+            <h2 class="text-black mb-2">O QUE ESTAMOS FAZEMOS?</strong></h2>
+              <div class="row" style=" margin-top: 50px">
+                  <div class="col-md-12 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="">
+                    <div class="block_service">
+                      <img src="images/020-covid-19.svg" alt="Image mb-5">
+                    </div>
+        
+                  </div>
+                  <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="100">
+                    <div class="block_service">
+                      <img src="images/viseira_icon.png" alt="Image mb-5">
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200">
+                    <div class="block_service">
+                      <img src="images/013-stayhome.svg" alt="Image mb-5">
+                    </div>
+                  </div>
+          </div>
+          <p>Apoiar no momento de crise. Ajudar com o que podemos. <br>Protegendo os médicos. Para que eles possam
+            seguir nos protegendo.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="parallax2"></div>
 
     <section class="site-section" id="mask-section">
       <div class="container">
         <div class="row justify-content-center" data-aos="fade-up">
-          <div class="col-lg-5 align-self-center mr-auto text-left heading-section mb-5">
-            <div class="ml-4">
-                <img src="images/logo_red.png" alt="Image" class="img-fluid cover-img" style="max-width: 5%">
+          <div class="col-lg-6 text-center heading-section mb-5">
+            <div>
+              <img src="images/ícone_gama_vermelho.png" alt="Image" class="img-fluid cover-img"
+                style="max-width: 5%; margin-bottom: 20px">
             </div>
-            <h2 class="text-black mb-3">AS <strong style="color:#ed163c">VISEIRAS</strong></h2>
-            <h4 class="text-black mb-2">Precisamos urgentemente de <strong style="color:#ed163c"> matéria prima</strong> para <strong style="color:#ed163c">Proteção Frontal</strong> para seguirmos com a fabricação.</h4>
-            <p class="lead">As viseiras (Face-Shields) são fundamentais para proteção dos médicos ao tratar pacientes com COVID-19.</p>
-            <p class="text-muted mb-4">
-              As viseiras essencialmente compostas por três partes:</p>
-            <ul class="list-unstyled ul-paw primary mb-0">
-              <li>Suporte para cabeça</li>
-              <li><strong style="color:#ed163c">Proteção frontal</strong> - Chapas de Polipropileno transparente (...)</li>
-              <li>Elástico</li>
-            </ul>
-            <p class="text-muted mb-4">E precisamos de doação para todos estes, tanto de materiais, quanto de recursos financeiros para comprá-los</p>
-            <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Quero apoiar! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-            
-          </div>
-          <div class="col-lg-6 text-left heading-section mb-5"  data-aos="fade-up" data-aos-delay="100">
-            <!-- <a  data-fancybox data-ratio="1.5" href="https://vimeo.com/317571768" class="video-img"> -->
-              <!-- <span class="play">
-                <span class="icon-play"></span>
-              </span> -->
-              <img id="shield" src="images/face-shield.svg" alt="Image" class="img-fluid"/>
-              
-              <!-- <img src="images/face-shield.svg" alt="Image" class="img-fluid"> -->
-            <!-- </a> -->
+            <h2 class="text-black mb-2">A MÁSCARA</strong></h2>
+            <p>Apoiar no momento de crise. Ajudar com o que podemos. <br>Protegendo os médicos. Para que eles possam
+              seguir nos protegendo.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="site-section " id="situation-section">
-        <div class="container">
-          <div class="row justify-content-center" data-aos="fade-up">
-            <div class="col-lg-6 text-center heading-section mb-5">
-              <div>
-                  <img src="images/logo_red.png" alt="Image" class="img-fluid cover-img" style="max-width: 5%">
-              </div>
-              <h2 class="text-black mb-2">A <strong style="color:#ed163c">SITUAÇÃO</strong></h2>
-              <p>A crise global vem se agravando a cada dia. Todos nós devemos fazer a nossa parte para evitar maiores problemas. <strong>A nossa parte é apoiar.</strong></p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="">
-              
-              <div class="block_service">
-                <img src="images/020-covid-19.svg" alt="Image mb-5">
-                <h3>CRISE NA DISTRIBUÇÃO DE RECURSOS</h3>
-                <p>No Brasil e no mundo. Recusos médicos estão se esgotando devido à demanda exorbitante tão repentina. <strong> Ninguém estava preparado. Por isso estamos apoiando. </strong></p>
-                <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Quero apoiar! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-              </div>
-  
-            </div>
-            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="100">
-              <div class="block_service">
-                <img src="images/mask_side.svg" alt="Image mb-5">
-                <h3>FABRICAÇÃO EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAIS (EPIs)</h3>
-                <p>Os EPIs são fundamentais para o dia-a-dia médico. <strong>Se está em falta em seu hospital, não hesite em nos acionar!</strong> Fabricá-los é um desafio grande. Por isso precisamos da ajuda de todos! </p>
-                <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/tJdUoO" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#ed163c;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Precisamos de viseiras! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200">
-              <div class="block_service">
-                <img src="images/013-stayhome.svg" alt="Image mb-5">
-                <h3>FAÇA SUA PARTE</h3>
-                <p><strong>Evite ao máximo sair de casa! Ajude à distância.</strong> Nosso projeto é gerido de maneira remota. <strong>Muito Obrigado à todos aqueles que saem de casa para ajudar.</strong> <br><br>Médicos, Enfermeiros, claro! Mas também cozinheiros, funcionários de supermercados, entregadores e todos aqueles que saem de casa para ajudar. </p>
-              </div>
-            </div>
-  
-  
-            <!-- <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="">
-              
-              <div class="block_service">
-                <img src="images/dogger_veterinary.svg" alt="Image mb-5">
-                <h3>Dog First Aid</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-              </div>
-  
-            </div>
-            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="100">
-              <div class="block_service">
-                <img src="images/dogger_dryer.svg" alt="Image mb-5">
-                <h3>Dog Dryer</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200">
-              <div class="block_service">
-                <img src="images/dogger_veterinarian.svg" alt="Image mb-5">
-                <h3>Expert Veterinarian</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-              </div>
-            </div> -->
-              
-          </div>
-        </div>
-      </section>
+    <div class="parallax3"></div>
 
-    <section class="site-section" id="doubts-section">
-      <div class="container" id="accordion">
+
+    <section class="site-section" id="help-section">
+      <div class="container">
         <div class="row justify-content-center" data-aos="fade-up">
           <div class="col-lg-6 text-center heading-section mb-5">
             <div>
-                <img src="images/logo_red.png" alt="Image" class="img-fluid cover-img" style="max-width: 5%">
+              <img src="images/ícone_gama_vermelho.png" alt="Image" class="img-fluid cover-img"
+                style="max-width: 5%; margin-bottom: 20px">
             </div>
-            <h2 class="text-black mb-2"><strong style="color:#ed163c">Dúvidas</strong> frequentes</h2>
-            <p>Se você possui uma dúvida que não está nesta lista envie um email para: <a href = "mailto: info@projetogama.com.br">info@projetogama.com.br</a></p>
+            <h2 class="text-black mb-2">QUER AJUDAR?</strong></h2>
+            <p class="text-black">Apoiar no momento de crise. Ajudar com o que podemos. <br>Protegendo os médicos. Para
+              que eles possam seguir nos protegendo.</p>
+            <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right"
+              style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+              data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">QUERO AJUDAR </a>
+            <script>
+              (function () {
+                var qs, js, q, s, d = document,
+                  gi = d.getElementById,
+                  ce = d.createElement,
+                  gt = d.getElementsByTagName,
+                  id = "typef_orm_share",
+                  b = "https://embed.typeform.com/";
+                if (!gi.call(d, id)) {
+                  js = ce.call(d, "script");
+                  js.id = id;
+                  js.src = b + "embed.js";
+                  q = gt.call(d, "script")[0];
+                  q.parentNode.insertBefore(js, q)
+                }
+              })()
+            </script>
           </div>
-        </div>
-        <div class="row accordion justify-content-center block__76208">
-          <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0" data-aos="fade-up"  data-aos-delay="">
-            <img src="images/logo_red_text.png" alt="Image" class="img-fluid rounded" style="max-width: 75%">
-          </div>
-          <div class="col-lg-5 mr-auto order-lg-1" data-aos="fade-up"  data-aos-delay="100">
-            <div class="accordion-item">
-              <h3 class="mb-0 heading">
-                <a class="btn-block" data-toggle="collapse" href="#collapseFive" role="button" aria-expanded="true" aria-controls="collapseFive">Como posso fazer parte do projeto?<span class="icon"></span></a>
-              </h3>
-              <div id="collapseFive" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="body-text">
-                  <p>Basta preencher este formulário que entraremos em contato rapidamente com orientações. <strong>Temos muito trablho pela frente!</strong></p>
-                  <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Quero apoiar! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-                </div>
-              </div>
-            </div> <!-- .accordion-item -->
-
-            <div class="accordion-item">
-              <h3 class="mb-0 heading">
-                <a class="btn-block" data-toggle="collapse" href="#collapseSix" role="button" aria-expanded="false" aria-controls="collapseSix">Porque <strong>viseiras</strong> e não máscaras?<span class="icon"></span></a>
-              </h3>
-              <div id="collapseSix" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="body-text">
-                  <p>As viseiras são um dos materiais médicos mais importantes, dado que assim como as máscaras protegem o rosto, área de risco de contágio. Mas melhor do que máscaras, as viserias impedem que os médicos/enfermeiros coloquem as mãos no rosto.</p>
-                  <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/tJdUoO" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#ed163c;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Precisamos de viseiras! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-                </div>
-              </div>
-            </div> <!-- .accordion-item -->
-
-            <!-- <div class="accordion-item">
-              <h3 class="mb-0 heading">
-                <a class="btn-block" data-toggle="collapse" href="#collapseSeven" role="button" aria-expanded="false" aria-controls="collapseSeven">Como é feita a distribuição para os hospitais?<span class="icon"></span></a>
-              </h3>
-              <div id="collapseSeven" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="body-text">
-                  <p>Estamos montando parcerias com empresas de logistica, como a LOGGI que se disponibilizou à ajudar. Mas mais ajuda será necessária</p>
-                  <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Quero apoiar! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-                </div>
-              </div>
-            </div>  -->
-            <!-- .accordion-item -->
-
-            <div class="accordion-item">
-              <h3 class="mb-0 heading">
-                <a class="btn-block" data-toggle="collapse" href="#collapseEight" role="button" aria-expanded="false" aria-controls="collapseEight">Quem está por trás do <strong>Projeto Gama</strong>?<span class="icon"></span></a>
-              </h3>
-              <div id="collapseEight" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="body-text">
-                  <p>Um grupo formado por empresas, universidades, profissionais da saúde, empreendedores e voluntários!</p>
-                </div>
-              </div>
-            </div> <!-- .accordion-item -->
-
-          </div>
-
-          
         </div>
       </div>
     </section>
-    
-    <footer class="site-footer" id="contact-section">
+
+    <section class="site-section" id="help-section">
       <div class="container">
-        <div class="row">
-          <div class="col-md-9">
-            <div class="row">
-              <div class="col-md-5">
-                <h2 class="footer-heading mb-4">Entre em contato!</h2>
-                <p><a href = "mailto: info@projetogama.com.br">info@projetogama.com.br</a></p>
-                <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/tJdUoO" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#ed163c;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Precisamos de viseiras! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-                <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">Quero apoiar! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-            
-              </div>
-              <div class="col-md-3 ml-auto">
-                <h2 class="footer-heading mb-4">Links</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#home-section" class="smoothscroll">HOME</a></li>
-                  <li><a href="#mission-section" class="smoothscroll">NOSSA MISSÃO</a></li>
-                  <li><a href="#mask-section" class="smoothscroll">AS VISEIRAS</a></li>
-                  <li><a href="#situation-section" class="smoothscroll">A SITUAÇÃO</a></li>
-                  <li><a href="#doubts-section" class="smoothscroll">DÚVIDAS</a></li>
-                  <li><a href="#contact-section" class="smoothscroll">CONTATO</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Compartilhe!</h2>
-                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              </div>
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-lg-6 text-center heading-section mb-5">
+            <div>
+              <img src="images/ícone_gama_vermelho.png" alt="Image" class="img-fluid cover-img"
+                style="max-width: 5%; margin-bottom: 20px">
             </div>
+            <h2 class="text-black mb-2">PARCERIAS</strong></h2>
+            <p class="text-black">Apoiar no momento de crise. Ajudar com o que podemos. <br>Protegendo os médicos. Para
+              que eles possam seguir nos protegendo.</p>
           </div>
         </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-              <p class="copyright"><small>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright Projeto Gama &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
-        
+        <div class="row text-center justify-content-center">
+            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="">
+              <div class="block_service">
+                <img src="images/logo.jpg" alt="logo 1">
+              </div>
+  
             </div>
+            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="100">
+              <div class="block_service">
+                  <img src="images/logo.jpg" alt="logo 1">
+              </div>
+            </div>
+            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200">
+              <div class="block_service">
+                  <img src="images/logo.jpg" alt="logo 1">
+              </div>
+            </div>
+
           </div>
-          
-        </div>
       </div>
-    </footer>
+    </section>
+
+
+    <p class="copyright text-center justify-content-center"><small>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright Projeto Gama &copy;<script>
+          document.write(new Date().getFullYear());
+        </script> All rights reserved | This template is made with <i class="icon-heart text-danger"
+          aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
 
   </div> <!-- .site-wrap -->
 
@@ -414,6 +300,7 @@
   <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/main.js"></script>
 
-  
-  </body>
+
+</body>
+
 </html>

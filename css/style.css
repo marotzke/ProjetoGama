@@ -27,6 +27,54 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
+.parallax1 {
+  /* The image used */
+  background-image: url("../images/gama_photo_doctors.png");
+
+  /* Set a specific height */
+  height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  filter: brightness(50%);
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("../images/gama_photo_sign.png");
+
+  /* Set a specific height */
+  height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  filter: brightness(50%);
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("../images/gama_photo_sign.png");
+
+  /* Set a specific height */
+  height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  filter: brightness(50%);
+}
+
 .border-2 {
   border-width: 2px; }
 
