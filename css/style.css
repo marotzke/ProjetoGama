@@ -43,6 +43,12 @@ h1, h2, h3, h4, h5,
   filter: brightness(50%);
 }
 
+.main-text {
+  margin-top:20px;
+  text-align:justify;
+  color:black;
+}
+
 .parallax2 {
   /* The image used */
   background-image: url("../images/gama_photo_sign.png");
