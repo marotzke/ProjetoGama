@@ -19,6 +19,7 @@ fields:
       format: markdown
   label: Texto da home
   description: Texto utilizado na descrição abaixo do logo na home page
+  hidden: true
 - name: logo_home
   type: file
   config:
@@ -26,11 +27,13 @@ fields:
   label: Logo home
   description: Logo utilizado para a home page
   default: "/images/GAMA_LOGO_BRANCO-1.svg"
+  hidden: true
 - name: cta_hospitais
   type: text
   config:
     required: false
   label: CTA Hospitais
   description: CTA para botão da dos hospitais
+  hidden: true
 pages:
 - index.html
