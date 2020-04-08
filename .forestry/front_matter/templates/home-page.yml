@@ -1,4 +1,34 @@
 ---
 label: Home Page
 hide_body: true
-fields: []
+fields:
+- name: texto_da_home
+  type: textarea
+  default: Somos um grupo de trabalho 100% voluntário, formado por pessoas de diversas
+    áreas de atuação, que se formou inicialmente para produção de Face Shields em
+    impressoras 3D. O sucesso desta primeira iniciativa fez crescer nosso compromisso.
+    Conseguimos, em tempo recorde, escalar esta iniciativa em uma operação muito mais
+    ampla, independente, em escala industrial – isso significa que passamos de uma
+    capacidade produtiva de centenas de unidades para dezenas de milhares de unidades
+    por semana. Assim conseguiremos ajudar um número ainda maior de pessoas a se protegerem
+    contra o COVID-19!
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Texto da home
+  description: Texto utilizado na descrição abaixo do logo na home page
+- name: logo_home
+  type: file
+  config:
+    maxSize: 250
+  label: Logo home
+  description: Logo utilizado para a home page
+  default: "/images/GAMA_LOGO_BRANCO-1.svg"
+- name: cta_hospitais
+  type: text
+  config:
+    required: false
+  label: CTA Hospitais
+  description: CTA para botão da dos hospitais
