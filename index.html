@@ -62,6 +62,11 @@
       setInterval(displayNextImage, 2000);
     }
 
+    function hideMenu() {
+      let body = document.querySelector("body");
+      body.classList.remove("offcanvas-menu");
+    }
+
     var images = [],
       x = -1;
     images[0] = "images/face-shield-assemble.svg";
@@ -109,10 +114,10 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#mission-section" class="nav-link">QUEM SOMOS?</a></li>
-                <li><a href="#work-section" class="nav-link">NOSSO TRABALHO</a></li>
-                <li><a href="#mask-section" class="nav-link">FACE SHIELDS</a></li>
-                <li><a href="#help-section" class="nav-link">QUER AJUDAR?</a></li>
+                <li onclick="hideMenu()" ><a href="#mission-section" class="nav-link">QUEM SOMOS?</a></li>
+                <li onclick="hideMenu()" ><a href="#work-section" class="nav-link">NOSSO TRABALHO</a></li>
+                <li onclick="hideMenu()" ><a href="#mask-section" class="nav-link">FACE SHIELDS</a></li>
+                <li onclick="hideMenu()" ><a href="#help-section" class="nav-link">QUER AJUDAR?</a></li>
               </ul>
             </nav>
           </div>
