@@ -50,12 +50,12 @@
   <script type="text/javascript">
     function displayNextImage() {
       x = (x === images.length - 1) ? 0 : x + 1;
-      document.getElementById("shield").src = images[x];
+      if(document.getElementById("shield")) {document.getElementById("shield").src = images[x]};
     }
 
     function displayPreviousImage() {
       x = (x <= 0) ? images.length - 1 : x - 1;
-      document.getElementById("shield").src = images[x];
+      if(document.getElementById("shield")) {document.getElementById("shield").src = images[x]};
     }
 
     function startTimer() {
