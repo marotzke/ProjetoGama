@@ -1,7 +1,7 @@
 function animateValue(id, start, end, duration) {
   let range = end - start;
   let current = start;
-  let increment = end > start ? 5 : -1;
+  let increment = end > start ? 10 : -1;
   let stepTime = Math.abs(Math.floor(duration / range));
   let obj = document.getElementById(id);
   let timer = setInterval(function () {
@@ -10,7 +10,7 @@ function animateValue(id, start, end, duration) {
     if (current == end) {
       clearInterval(timer);
     }
-  }, 1);
+  }, stepTime);
 }
 
-animateValue("qnt-doacoes", 0, 10500, 5000);
+animateValue("qnt-doacoes", 0, 5500, 4000);
