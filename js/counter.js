@@ -22,7 +22,7 @@ function dynamicCircle(value) {
 function animateValue(id, start, end, duration) {
   let range = end - start;
   let current = start;
-  let increment = end > start ? 10 : -1;
+  let increment = end > start ? 50 : -1;
   let stepTime = Math.abs(Math.floor(duration / range));
   let obj = document.getElementById(id);
   let timer = setInterval(function () {
@@ -35,6 +35,6 @@ function animateValue(id, start, end, duration) {
 }
 
 window.onload = () => {
-  animateValue("qnt-doacoes", 0, 5500, 4000);
+  animateValue("qnt-doacoes", 0, 5500, 1000);
   dynamicCircle((5500 / 300000) * 100);
 };

@@ -2,7 +2,7 @@ let ctx = document.getElementById("grafico-entregas");
 let myChart = new Chart(ctx, {
   type: "bar",
   data: {
-    labels: ["6-12/abr"], //, '13-19/abr', '20-26/abr', '27/abr-03/jun'
+    labels: ["6-12/abr", "13-19/abr", "20-26/abr", "27/abr-03/jun", '4-10/jun', '11-17/jun', '18-24/jun', '25-31/jun', '1-7/jul'],
     datasets: [
       {
         label: "numero de shields entregue",
