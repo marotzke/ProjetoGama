@@ -2150,11 +2150,19 @@ figure figcaption {
       font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       font-weight: 500;
       font-size: 28px;
-      margin: 0 0 0 3em;
+      /* margin: 0 0 0 3em; */
+    }
+    .home-accomplishments{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5em;
     }
     @media(max-width: 991.98px){
       .donation-count {
         display: block;
         margin: 1em 0 0 0;
+      }
+      .home-accomplishments {
+        flex-direction: column;
       }
     }

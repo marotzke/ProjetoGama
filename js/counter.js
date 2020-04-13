@@ -1,3 +1,24 @@
+function dynamicCircle(value) {
+  let circle = document.querySelector(".progress-circle-prog");
+  circle.style.strokeDasharray = value * 4.65 + " 999";
+  let text = document.querySelector(".progress-text");
+  let from = document
+    .querySelector(".progress-text")
+    .getAttribute("data-progress");
+  document.querySelector(".progress-text").setAttribute("data-progress", value);
+  let start = new Date().getTime();
+  setTimeout(function () {
+    let now = new Date().getTime() - start;
+    let progress = now / 700;
+    result =
+      value > from
+        ? Math.floor((value - from) * progress + from)
+        : Math.floor(from - (from - value) * progress);
+    text.innerHTML = progress < 1 ? result + "%" : Math.floor(value) + "%";
+    if (progress < 1) setTimeout(arguments.callee, 10);
+  }, 10);
+}
+
 function animateValue(id, start, end, duration) {
   let range = end - start;
   let current = start;
@@ -13,4 +34,7 @@ function animateValue(id, start, end, duration) {
   }, stepTime);
 }
 
-animateValue("qnt-doacoes", 0, 5500, 4000);
+window.onload = () => {
+  animateValue("qnt-doacoes", 0, 5500, 4000);
+  dynamicCircle((5500 / 300000) * 100);
+};
