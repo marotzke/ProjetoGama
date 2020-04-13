@@ -6,21 +6,21 @@
   margin: 0 0 0 -80px;
 }
 
-/* .progress-circle {
+.progress-circle {
 transform: rotate(-90deg);
 margin-top: -40px;
-} */
+}
 
 .progress-circle-back {
 fill: none; 
 stroke: #D2D2D2;
-stroke-width:10px;
+stroke-width:25px;
 }
 
 .progress-circle-prog {
 fill: none; 
 stroke: #fff;
-stroke-width: 10px;  
+stroke-width: 28px;  
 stroke-dasharray: 0 999;    
 stroke-dashoffset: 0px;
   transition: stroke-dasharray 0.7s linear 0s;
