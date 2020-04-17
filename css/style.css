@@ -2157,6 +2157,13 @@ figure figcaption {
       justify-content: space-between;
       margin-bottom: 1.5em;
     }
+    .show-first-few {
+      height: 400px;
+      overflow: auto;
+    }
+    .table td {
+      vertical-align: middle;
+    }
     @media(max-width: 991.98px){
       .donation-count {
         display: block;
