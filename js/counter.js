@@ -47,5 +47,5 @@ function numberWithCommas(x) {
 
 window.onload = () => {
   animateValue("qnt-doacoes", 0, 23700, 1000);
-  dynamicCircle((23700 / 300000) * 100);
+  dynamicCircle((23700 / 275000) * 100);
 };
