@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="pt-br">
 
@@ -9,7 +8,7 @@
   <meta property="og:url" content="https://projetogama.com.br/" />
   <meta property="og:description" content="Produzindo e Doando Face Shields para os Hospitais">
   <meta property="og:image" content="//images/logo_completo.png">
-  <meta property="og:type" content="website"/>
+  <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
 
 
@@ -34,29 +33,47 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163135613-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-163135613-1');
   </script>
 
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NFMTHWJ');</script>
-    <!-- End Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NFMTHWJ');
+  </script>
+  <!-- End Google Tag Manager -->
 
   <script type="text/javascript">
     function displayNextImage() {
       x = (x === images.length - 1) ? 0 : x + 1;
-      if(document.getElementById("shield")) {document.getElementById("shield").src = images[x]};
+      if (document.getElementById("shield")) {
+        document.getElementById("shield").src = images[x]
+      };
     }
 
     function displayPreviousImage() {
       x = (x <= 0) ? images.length - 1 : x - 1;
-      if(document.getElementById("shield")) {document.getElementById("shield").src = images[x]};
+      if (document.getElementById("shield")) {
+        document.getElementById("shield").src = images[x]
+      };
     }
 
     function startTimer() {
@@ -78,9 +95,9 @@
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section" onload="startTimer()">
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFMTHWJ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFMTHWJ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <div id="overlayer"></div>
   <div class="loader">
@@ -108,17 +125,18 @@
         <div class="row align-items-center">
 
           <div class="col-2 col-xl-1">
-              <a href="#home-section" class="smoothscroll"><img src="images/icone_gama.png" alt="Image" class="img-fluid cover-img" style="max-width: 50%"></a>
+            <a href="#home-section" class="smoothscroll"><img src="images/icone_gama.png" alt="Image"
+                class="img-fluid cover-img" style="max-width: 50%"></a>
           </div>
-          
+
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li onclick="hideMenu()" ><a href="#mission-section" class="nav-link">QUEM SOMOS?</a></li>
-                <li onclick="hideMenu()" ><a href="#work-section" class="nav-link">NOSSO TRABALHO</a></li>
-                <li onclick="hideMenu()" ><a href="#mask-section" class="nav-link">FACE SHIELDS</a></li>
-                <li onclick="hideMenu()" ><a href="#help-section" class="nav-link">QUER AJUDAR?</a></li>
+                <li onclick="hideMenu()"><a href="#mission-section" class="nav-link">QUEM SOMOS?</a></li>
+                <li onclick="hideMenu()"><a href="#work-section" class="nav-link">NOSSO TRABALHO</a></li>
+                <li onclick="hideMenu()"><a href="#mask-section" class="nav-link">FACE SHIELDS</a></li>
+                <li onclick="hideMenu()"><a href="#help-section" class="nav-link">QUER AJUDAR?</a></li>
               </ul>
             </nav>
           </div>
@@ -133,10 +151,6 @@
           <a href="#mask-section" class="smoothscroll" style="color:white"><strong>Atenção!</strong> precisamos de matéria prima para proteção frontal das viseiras.</a>
         </div>       -->
     </header>
-
-    
-
-
     <section class="site-blocks-cover bg-red">
       <div class="container">
         <div class="row">
@@ -144,27 +158,53 @@
             <div class="intro-text">
               <div class="home-accomplishments">
               <img src="images/GAMA_LOGO_BRANCO.svg " alt="Image" class="img-fluid cover-img"
-                style="width:50%;"> 
-                <div style="display: flex; justify-content: center; flex-direction: column; margin-top: 1em;">
-               
-                <div class="dynamic-progress">
-                    <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
-                      <circle class="progress-circle-back"
-                            cx="80" cy="80" r="60"></circle>
-                        <circle class="progress-circle-prog"
-                                cx="80" cy="80" r="60"></circle>
-                    </svg>
-                    <div class="progress-text" data-progress="0">0%</div>
-                </div>	
-                <a href="#accomplishments" class="smoothscroll"><span class="donation-count">Já doamos <span id="qnt-doacoes">0</span> shields</span></a>
-              </div>
-              </div>
-                <p class="text-white">Somos o <strong>Projeto GAMA</strong> - Grupo de Apoio aos Médicos e Agentes de Saúde e a nossa missão é produzir <strong>Face Shields</strong> em larga escala para atender a alta demanda em um curto período de tempo. Estamos trabalhando para produzir esse material e <strong>DOAR</strong> para os hospitais que precisam. Estamos juntos nesta luta contra o <strong>COVID-19, FIQUE EM CASA!</strong> 
-                  </p>
-                  <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/tJdUoO" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">PRECISO DE FACE SHIELDS </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-                  <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">QUERO APOIAR </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-                  <br>
-                  <a href="#mission-section" class="smoothscroll"><img src="images/down.svg" alt="Image" class="img-fluid cover-img" style="max-width:2%"></a>
+              style="width:50%;"> 
+              <div style="display: flex; justify-content: center; flex-direction: column; margin-top: 1em;">
+             
+              <div class="dynamic-progress">
+                  <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="progress-circle-back"
+                          cx="80" cy="80" r="60"></circle>
+                      <circle class="progress-circle-prog"
+                              cx="80" cy="80" r="60"></circle>
+                  </svg>
+                  <div class="progress-text" data-progress="0">0%</div>
+              </div>	
+              <a href="#accomplishments" class="smoothscroll"><span class="donation-count">Já doamos <span id="qnt-doacoes">0</span> shields</span></a>
+            </div>
+            </div>
+              <br><br>
+            <p class="text-white">Somos o <strong>Projeto GAMA</strong> - Grupo de Apoio aos Médicos e Agentes de
+              Saúde e a nossa missão é produzir <strong>Face Shields</strong> em larga escala para atender a alta
+              demanda em um curto período de tempo. Estamos trabalhando para produzir esse material e
+              <strong>DOAR</strong> para os hospitais que precisam. Estamos juntos nesta luta contra o
+              <strong>COVID-19, FIQUE EM CASA!</strong>
+            </p>
+            <!-- <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/tJdUoO" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">PRECISO DE FACE SHIELDS </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
+            <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right"
+              style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+              data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">QUERO APOIAR
+            </a>
+            <script>
+              (function () {
+                var qs, js, q, s, d = document,
+                  gi = d.getElementById,
+                  ce = d.createElement,
+                  gt = d.getElementsByTagName,
+                  id = "typef_orm_share",
+                  b = "https://embed.typeform.com/";
+                if (!gi.call(d, id)) {
+                  js = ce.call(d, "script");
+                  js.id = id;
+                  js.src = b + "embed.js";
+                  q = gt.call(d, "script")[0];
+                  q.parentNode.insertBefore(js, q)
+                }
+              })()
+            </script>
+            <br>
+            <a href="#mission-section" class="smoothscroll"><img src="images/down.svg" alt="Image"
+                class="img-fluid cover-img" style="max-width:2%"></a>
 
               <!-- <p class="mb-4">Produzimos Equipamentos de proteção individual para nossos heróis e heroínas nos hospitais.</p> -->
 
@@ -191,8 +231,43 @@
             </div>
             <h2 class="text-black mb-2">QUEM SOMOS?</strong></h2>
             <h3 class="text-black">GAMA - GRUPO DE APOIO AOS MÉDICOS E AGENTES DE SAÚDE</h3>
-            <p class="main-text" >Somos um grupo de trabalho <strong>100% voluntário</strong>, formado por pessoas de diversas áreas de atuação, que se formou inicialmente para produção de <strong>Face Shields</strong> em impressoras 3D. O sucesso desta primeira iniciativa fez crescer nosso compromisso. Conseguimos, em tempo recorde, escalar esta iniciativa em uma operação muito mais ampla, independente, em escala industrial – isso significa que passamos de uma capacidade produtiva de centenas de unidades para dezenas de milhares de unidades por semana. Assim conseguiremos ajudar um número ainda maior de pessoas a se protegerem contra o <strong>COVID-19!</strong></p>
-            <a class="typeform-share form" href="https://matheusmarotzke.typeform.com/to/tJdUoO" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">PRECISO DE FACE SHIELDS </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+            <p class="main-text">Somos um grupo de trabalho <strong>100% voluntário</strong>, formado por pessoas de
+              diversas áreas de atuação, que se formou inicialmente para produção de <strong>Face Shields</strong> em
+              impressoras 3D. O sucesso desta primeira iniciativa fez crescer nosso compromisso. Conseguimos, em tempo
+              recorde, escalar esta iniciativa em uma operação muito mais ampla, independente, em escala industrial –
+              isso significa que passamos de uma capacidade produtiva de centenas de unidades para dezenas de milhares
+              de unidades por semana. Assim conseguiremos ajudar um número ainda maior de pessoas a se protegerem contra
+              o <strong>COVID-19!</strong></p>
+              <br>
+              <br>
+              <a 
+              style="display:inline-block;text-decoration:none;border: 2px solid #5c5c5c;;background-color:white;color:#5c5c5c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+              >PRECISO DE FACE SHIELDS </a>
+              <p class="text-black">Atingimos a nossa capacidade de atendimento para as demandas que já recebemos, voltaremos a receber pedidos assim que estas entregas estiverem a caminho.
+              </p>
+
+            <!-- <a class="typeform-share form" href="https://matheusmarotzke.typeform.com/to/tJdUoO"
+              data-mode="drawer_right"
+              style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+              data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">PRECISO DE FACE
+              SHIELDS </a>
+            <script>
+              (function () {
+                var qs, js, q, s, d = document,
+                  gi = d.getElementById,
+                  ce = d.createElement,
+                  gt = d.getElementsByTagName,
+                  id = "typef_orm_share",
+                  b = "https://embed.typeform.com/";
+                if (!gi.call(d, id)) {
+                  js = ce.call(d, "script");
+                  js.id = id;
+                  js.src = b + "embed.js";
+                  q = gt.call(d, "script")[0];
+                  q.parentNode.insertBefore(js, q)
+                }
+              })()
+            </script> -->
             <!-- <a class="typeform-share form" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">QUERO AJUDAR </a> <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script> -->
           </div>
         </div>
@@ -211,119 +286,212 @@
                 style="max-width: 5%; margin-bottom: 20px">
             </div>
             <h2 class="text-black mb-2">NOSSO TRABALHO</strong></h2>
-              <div class="row" style=" margin-top: 50px">
-                  <div class="col-md-12 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="" data-aos-once="true">
-                    <div class="block_service">
-                      <img src="images/020-covid-19.svg" alt="Image mb-5">
-                    </div>
-        
-                  </div>
-                  <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="100" data-aos-once="true">
-                    <div class="block_service">
-                      <img src="images/viseira_icon.png" alt="Image mb-5">
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200" data-aos-once="true">
-                    <div class="block_service">
-                      <img src="images/013-stayhome.svg" alt="Image mb-5">
-                    </div>
-                  </div>
+            <div class="row" style=" margin-top: 50px">
+              <div class="col-md-12 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="" data-aos-once="true">
+                <div class="block_service">
+                  <img src="images/020-covid-19.svg" alt="Image mb-5">
+                </div>
+
+              </div>
+              <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+                <div class="block_service">
+                  <img src="images/viseira_icon.png" alt="Image mb-5">
+                </div>
+              </div>
+              <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+                <div class="block_service">
+                  <img src="images/013-stayhome.svg" alt="Image mb-5">
+                </div>
+              </div>
+            </div>
+            <p class="main-text">Trabalhamos em <strong>colaboração</strong> com instituições de pesquisa como o INSPER,
+              POLI, FMUSP e UFRGS para desenvolver e validar <strong>soluções</strong> que sejam confortáveis, adequadas
+              e em <strong>conformidade</strong> com a Resolução RDC 356 da ANVISA, para o uso por profissionais que
+              estão na frente de batalha contra a pandemia do <strong>COVID-19</strong>, cuidando de todos nós. Estas
+              soluções estão sendo fabricadas por uma <strong>rede</strong> de empresas e instituições que se dispuseram
+              a ceder seus recursos em prol desta causa. Além disto, contamos com uma rede de apoiadores que contribuem
+              com trabalho, matéria prima, serviços e dinheiro. Nossa previsão é uma produção de <strong>135 mil Face
+                Shields</strong> para o estado de São Paulo e <strong>140 mil Face Shields</strong> para o Rio Grande do
+              Sul, até 7 de Junho. <strong>Junte-se a nós! </strong></p>
+            <a class="typeform-share form" href="https://matheusmarotzke.typeform.com/to/I482TP"
+              data-mode="drawer_right"
+              style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+              data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">QUERO APOIAR </a>
+            <script>
+              (function () {
+                var qs, js, q, s, d = document,
+                  gi = d.getElementById,
+                  ce = d.createElement,
+                  gt = d.getElementsByTagName,
+                  id = "typef_orm_share",
+                  b = "https://embed.typeform.com/";
+                if (!gi.call(d, id)) {
+                  js = ce.call(d, "script");
+                  js.id = id;
+                  js.src = b + "embed.js";
+                  q = gt.call(d, "script")[0];
+                  q.parentNode.insertBefore(js, q)
+                }
+              })()
+            </script>
           </div>
-          <p  class="main-text">Trabalhamos em <strong>colaboração</strong> com instituições de pesquisa como o INSPER, POLI, FMUSP e UFRGS para desenvolver e validar <strong>soluções</strong>  que sejam confortáveis, adequadas e em <strong>conformidade</strong>  com a Resolução RDC 356 da ANVISA, para o uso por profissionais que estão na frente de batalha contra a pandemia do <strong>COVID-19</strong>, cuidando de todos nós. Estas soluções estão sendo fabricadas por uma <strong>rede</strong>  de empresas e instituições que se dispuseram a ceder seus recursos em prol desta causa. Além disto, contamos com uma rede de apoiadores que contribuem com trabalho, matéria prima, serviços e dinheiro. Nossa previsão é uma produção de <strong>145 mil Face Shields</strong> para o estado de São Paulo e <strong>140 mil Face Shields</strong> para o Rio Grande do Sul, até 7 de Junho. <strong>Junte-se a nós! </strong></p>
-          <a class="typeform-share form" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">QUERO APOIAR </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
         </div>
-      </div>
     </section>
 
     <div class="parallax2"></div>
 
     <section class="site-section" id="mask-section">
       <div class="container">
-          <div class="row justify-content-center" data-aos="fade-up" data-aos-once="true">
-              <div class="col-lg-6 text-center heading-section mb-5">
-                <div>
-                    <img src="images/icone_gama_vermelho.png" alt="Image" class="img-fluid cover-img" style="max-width: 5%">
-                </div>
-                <h2 class="text-black mb-2">FACE SHIELDS</strong></h2>
-              </div>
-            </div>
-
-            <div class="row hover-1-wrap mb-5 mb-lg-0">
-                <div class="col-12">
-                  <div class="row justify-content-center">
-                    <div class="mb-2 mb-lg-0 col-lg-4 order-lg-2" data-aos="fade-right" data-aos-once="true">
-                      <div class="hover-1">
-                        <img src="images/mask_in_use.png" alt="Image" class="img-fluid" style="  -webkit-filter: grayscale(1); filter: grayscale(1);">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row justify-content-center" data-aos="fade-up" data-aos-once="true">
-                  <div class="col-lg-6 text-center heading-section mb-5">
-                      <p class="main-text">Os <strong>Face Shields</strong> são equipamentos de proteção individual <strong> (EPI) </strong>usados principalmente por pessoas que trabalham na área da saúde, como por exemplo, médicos, enfermeiros, auxiliares e fisioterapeutas. São utilizadas para proteção da área facial e membranas mucosas dos olhos, nariz e boca, contra gotículas, sprays e respingos de fluidos corporais. Os protetores faciais geralmente são utilizados em conjunto com outros equipamentos de proteção como máscaras e óculos. Devido a pandemia do <strong>COVID-19</strong> este equipamento está sendo utilizado também por outros profissionais dos hospitais e clinicas, bem como de outros locais de atendimento ao público.
-                        </p>
-                  </div>
-                </div>
-
-              <div class="row justify-content-center" data-aos="fade-up" data-aos-once="true">
-                  <div class="col-lg-6 text-center heading-section mb-5">
-                      <div class="row" style=" margin-top: 50px">
-                          <div class="col-md-12 mb-4 col-lg-4 justify-content-center" data-aos="fade-up" data-aos-delay="" data-aos-once="true">
-                            <div class="block_service">
-                              <img src="images/forehead_support-01.png" alt="Image mb-5">
-                              <p class="text-black">Suporte Frontal</p>
-                            </div>
-                
-                          </div>
-                          <div class="col-md-6 mb-4 col-lg-4 justify-content-center" data-aos="fade-up"  data-aos-delay="100" data-aos-once="true">
-                            <div class="block_service">
-                              <img src="images/shield.png" alt="Image mb-5">
-                              <p class="text-black">Proteção plástica</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6 mb-4 col-lg-4 justify-content-center" data-aos="fade-up"  data-aos-delay="200" data-aos-once="true">
-                            <div class="block_service">
-                              <img src="images/rubber_band-01.png" alt="Image mb-5">
-                              <p class="text-black">Elástico</p>
-                            </div>
-                          </div>
-                  </div>
-                    <p class="main-text">Ele é composto por um suporte que é colocado na cabeça onde é fixado uma chapa de plástico transparente que protege a área do rosto. O conjunto é ajustado à cabeça com um elástico ou fecho. Os equipamentos distribuídos pelo Projeto GAMA estão de acordo com a Resolução RDC 356 da <strong>ANVISA. </strong></p>
-                    <a class="typeform-share form" href="https://matheusmarotzke.typeform.com/to/tJdUoO" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">PRECISO DE FACE SHIELDS </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-                  </div>
-                </div>
-
-
-        </div>
-      </div>
-    </section>
-
-    <div class="parallax3"></div>
-
-
-    <section class="site-section" id="help-section">
-      <div class="container">
         <div class="row justify-content-center" data-aos="fade-up" data-aos-once="true">
           <div class="col-lg-6 text-center heading-section mb-5">
             <div>
-              <img src="images/icone_gama_vermelho.png" alt="Image" class="img-fluid cover-img"
-                style="max-width: 5%; margin-bottom: 20px">
+              <img src="images/icone_gama_vermelho.png" alt="Image" class="img-fluid cover-img" style="max-width: 5%">
             </div>
-            <h2 class="text-black mb-2">QUER AJUDAR?</strong></h2>
-            <p class="main-text">Para produzir e entregar os Face Shileds precisamos de matéria prima (PEAD, PET-G, elásticos, caixas de papelão, impressos e saco plástico), produção (injeção de plástico, corte de PET-G, manuseio), logística (transporte de matéria prima e entrega para hospitais), acesso a redes públicas e privadas de saúde. Nosso projeto é colaborativo, por isso se você também desejar montar uma iniciativa semelhante em sua cidade, conte conosco! 
-                Inscreva-se e colabore com nossa rede.
-                </p>
-                <p class="main-text"><strong>Ajuda é sempre bem vinda!</strong> No momento precisamos de uma atenção especial aos seguintes pontos:</p>
-                <ul>
-                  <li class="main-text"><strong>Matéria prima para a produção dos Face Shields</strong> (PEAD, PA6.6, Santoprene 45A, PET-G, elásticos).</li>
-                  <li class="main-text"><strong>Empresas/Voluntários que possam ajudar com entrega e logística</strong>, bem como materiais para este fim (caixas de papelão, impressos e saco plástico). </li>
-                  <li class="main-text"><strong>Empresas/Voluntários que possam ajudar com corte de PET-G</strong> fundamental para a construção dos Face Shields</li>
-                  <li class="main-text"><strong>Empresas/Voluntários que possam ajudar com o manuseio</strong> e embalagem para entrega</li>
-                </ul>
-            <a class="typeform-share form" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">QUERO AJUDAR</a> <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+            <h2 class="text-black mb-2">FACE SHIELDS</strong></h2>
           </div>
+        </div>
+
+        <div class="row hover-1-wrap mb-5 mb-lg-0">
+          <div class="col-12">
+            <div class="row justify-content-center">
+              <div class="mb-2 mb-lg-0 col-lg-4 order-lg-2" data-aos="fade-right" data-aos-once="true">
+                <div class="hover-1">
+                  <img src="images/mask_in_use.png" alt="Image" class="img-fluid"
+                    style="  -webkit-filter: grayscale(1); filter: grayscale(1);">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-once="true">
+          <div class="col-lg-6 text-center heading-section mb-5">
+            <p class="main-text">Os <strong>Face Shields</strong> são equipamentos de proteção individual <strong> (EPI)
+              </strong>usados principalmente por pessoas que trabalham na área da saúde, como por exemplo, médicos,
+              enfermeiros, auxiliares e fisioterapeutas. São utilizadas para proteção da área facial e membranas mucosas
+              dos olhos, nariz e boca, contra gotículas, sprays e respingos de fluidos corporais. Os protetores faciais
+              geralmente são utilizados em conjunto com outros equipamentos de proteção como máscaras e óculos. Devido a
+              pandemia do <strong>COVID-19</strong> este equipamento está sendo utilizado também por outros
+              profissionais dos hospitais e clinicas, bem como de outros locais de atendimento ao público.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-once="true">
+          <div class="col-lg-6 text-center heading-section mb-5">
+            <div class="row" style=" margin-top: 50px">
+              <div class="col-md-12 mb-4 col-lg-4 justify-content-center" data-aos="fade-up" data-aos-delay=""
+                data-aos-once="true">
+                <div class="block_service">
+                  <img src="images/forehead_support-01.png" alt="Image mb-5">
+                  <p class="text-black">Suporte Frontal</p>
+                </div>
+
+              </div>
+              <div class="col-md-6 mb-4 col-lg-4 justify-content-center" data-aos="fade-up" data-aos-delay="100"
+                data-aos-once="true">
+                <div class="block_service">
+                  <img src="images/shield.png" alt="Image mb-5">
+                  <p class="text-black">Proteção plástica</p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4 col-lg-4 justify-content-center" data-aos="fade-up" data-aos-delay="200"
+                data-aos-once="true">
+                <div class="block_service">
+                  <img src="images/rubber_band-01.png" alt="Image mb-5">
+                  <p class="text-black">Elástico</p>
+                </div>
+              </div>
+            </div>
+            <p class="main-text">Ele é composto por um suporte que é colocado na cabeça onde é fixado uma chapa de
+              plástico transparente que protege a área do rosto. O conjunto é ajustado à cabeça com um elástico ou
+              fecho. Os equipamentos distribuídos pelo Projeto GAMA estão de acordo com a Resolução RDC 356 da
+              <strong>ANVISA. </strong></p>
+              <br>
+              <br>
+              <a 
+              style="display:inline-block;text-decoration:none;border: 2px solid #5c5c5c;;background-color:white;color:#5c5c5c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+              >PRECISO DE FACE SHIELDS </a>
+              
+              <p class="text-black">Atingimos a nossa capacidade de atendimento para as demandas que já recebemos, voltaremos a receber pedidos assim que estas entregas estiverem a caminho.
+              </p>
+            <!-- <a class="typeform-share form" href="https://matheusmarotzke.typeform.com/to/tJdUoO"
+              data-mode="drawer_right"
+              style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+              data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">PRECISO DE FACE
+              SHIELDS </a>
+            <script>
+              (function () {
+                var qs, js, q, s, d = document,
+                  gi = d.getElementById,
+                  ce = d.createElement,
+                  gt = d.getElementsByTagName,
+                  id = "typef_orm_share",
+                  b = "https://embed.typeform.com/";
+                if (!gi.call(d, id)) {
+                  js = ce.call(d, "script");
+                  js.id = id;
+                  js.src = b + "embed.js";
+                  q = gt.call(d, "script")[0];
+                  q.parentNode.insertBefore(js, q)
+                }
+              })()
+            </script>
+          </div> -->
+        </div>
+
+
+      </div>
+  </div>
+  </section>
+
+  <div class="parallax3"></div>
+
+
+  <section class="site-section" id="help-section">
+    <div class="container">
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-once="true">
+        <div class="col-lg-6 text-center heading-section mb-5">
+          <div>
+            <img src="images/icone_gama_vermelho.png" alt="Image" class="img-fluid cover-img"
+              style="max-width: 5%; margin-bottom: 20px">
+          </div>
+          <h2 class="text-black mb-2">QUER AJUDAR?</strong></h2>
+          <p class="main-text">Para produzir e entregar os Face Shileds precisamos de matéria prima (PEAD, PET-G,
+            elásticos, caixas de papelão, impressos e saco plástico), produção (injeção de plástico, corte de PET-G,
+            manuseio), logística (transporte de matéria prima e entrega para hospitais), acesso a redes públicas e
+            privadas de saúde. Nosso projeto é colaborativo, por isso se você também desejar montar uma iniciativa
+            semelhante em sua cidade, conte conosco!
+            Inscreva-se e colabore com nossa rede.
+          </p>
+          <p class="main-text"><strong>Ajuda é sempre bem vinda!</strong> No momento precisamos de uma atenção especial
+            aos seguintes pontos:</p>
+          <ul>
+            <li class="main-text"><strong>Matéria prima para a produção dos Face Shields</strong> (PEAD, PA6.6,
+              Santoprene 45A, PET-G, elásticos).</li>
+            <li class="main-text"><strong>Empresas/Voluntários que possam ajudar com </strong> materiais para embalagem:
+              caixas de papelão, impressos e saco plástico transparente. </li>
+          </ul>
+          <a class="typeform-share form" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right"
+            style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+            data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">QUERO AJUDAR</a>
+          <script>
+            (function () {
+              var qs, js, q, s, d = document,
+                gi = d.getElementById,
+                ce = d.createElement,
+                gt = d.getElementsByTagName,
+                id = "typef_orm_share",
+                b = "https://embed.typeform.com/";
+              if (!gi.call(d, id)) {
+                js = ce.call(d, "script");
+                js.id = id;
+                js.src = b + "embed.js";
+                q = gt.call(d, "script")[0];
+                q.parentNode.insertBefore(js, q)
+              }
+            })()
+          </script>
         </div>
       </div>
     </section>
@@ -595,48 +763,98 @@
             <div>
               <img src="images/icone_gama_vermelho.png" alt="Image" class="img-fluid cover-img"
                 style="max-width: 5%; margin-bottom: 20px">
+    </div>
+  </section>
+
+  <section class="site-section" id="help-section">
+    <div class="container">
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-once="true">
+        <div class="col-lg-6 text-center heading-section mb-5">
+          <div>
+            <img src="images/icone_gama_vermelho.png" alt="Image" class="img-fluid cover-img"
+              style="max-width: 5%; margin-bottom: 20px">
+          </div>
+          <h2 class="text-black mb-2">REDES SOCIAIS</strong></h2>
+          <p class="text-black"> Siga nosso projeto no Instagram <a
+              href="https://www.instagram.com/projetogama.covid19/" target="_blank" class="pl-3 pr-3"><span
+                class="icon-instagram"></span></a></p>
+        </div>
+      </div>
+      <div class="row text-center justify-content-center">
+        <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="" data-aos-once="true">
+          <div class="block_service">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B_A_F9WHSKq/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B_A_F9WHSKq/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B_A_F9WHSKq/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Projeto GAMA (@projetogama.covid19)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-04-15T20:45:23+00:00">Apr 15, 2020 at 1:45pm PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+          </div>
+          
+        </div>
+        <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+          <div class="block_service">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B_A7VmuH1L-/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B_A7VmuH1L-/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B_A7VmuH1L-/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Projeto GAMA (@projetogama.covid19)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-04-15T20:12:34+00:00">Apr 15, 2020 at 1:12pm PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
             </div>
-            <h2 class="text-black mb-2">APOIO E PARCERIAS</strong></h2>
-            <p class="text-black"> “O mundo é como um espelho que devolve a cada pessoa o reflexo de seus próprios pensamentos. A maneira como você encara a vida é que faz toda diferença” - Luís Fernando Veríssimo</p>
+          </div>
+          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B-7-VCRnuqZ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B-7-VCRnuqZ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B-7-VCRnuqZ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Projeto GAMA (@projetogama.covid19)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-04-13T22:02:31+00:00">Apr 13, 2020 at 3:02pm PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
           </div>
         </div>
-        <div class="row text-center justify-content-center">
-            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="" data-aos-once="true">
-              <div class="block_service">
-                <p class="text-black">
-                  3D Criar <br><br>
-                  ABIMAQ - Associação Brasileira da Indústria de Máquinas Equipamentos<br><br>
-                  Alameda Comunicação<br><br>
-                  Alexandre de Moura Duarte<br><br>
-                  Alexandre Salfatis<br><br>
-                  Alexandre Vasconcellos Rodrigues<br><br>
-                  Alltec Indústria de Materiais Compostos<br><br>
-                  Ana Carolina Lucchese<br><br>
-                  ANEFBP – Associação do Núcleo de Excelência em Ferramentaria de Bragança Paulista – SP <br><br>
-                  Ariel Hamoui<br><br>
-                  ABINFER - Associação Brasileira Da Indústria De Ferramentais<br><br>
-                  Byr Componentes Para Moldes <br><br>
-                  Comexi do Brasil Ltda.<br><br>
-                  Daniel Kras<br><br>
-                  David Diesendruck<br><br>
-                  Eduardo Felipe Freire<br><br>
-                  Estúdio Colírio Estrategia e Design<br><br>
-                  Fabio Iguelka<br><br>
-                  Fabio Zsigmond<br><br>
-                  Ferdimat Indústria e Comércio de Máquinas Operatrizes Ltda<br><br>
-                  Filler Ferramentas Ltda<br><br>
-                  Francisco Angelini<br><br>
-                </p>
+
+
+        <section class="site-section" id="help-section">
+          <div class="container">
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-once="true">
+              <div class="col-lg-6 text-center heading-section mb-5">
+                <div>
+                  <img src="images/icone_gama_vermelho.png" alt="Image" class="img-fluid cover-img"
+                    style="max-width: 5%; margin-bottom: 20px">
+                </div>
+                <h2 class="text-black mb-2">APOIO E PARCERIAS</strong></h2>
+                <p class="text-black"> “O mundo é como um espelho que devolve a cada pessoa o reflexo de seus próprios
+                  pensamentos. A maneira como você encara a vida é que faz toda diferença” - Luís Fernando Veríssimo</p>
               </div>
-  
             </div>
-            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="100" data-aos-once="true">
-              <div class="block_service">
+            <div class="row text-center justify-content-center">
+              <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="" data-aos-once="true">
+                <div class="block_service">
                   <p class="text-black">
+                    3D Criar <br><br>
+                    ABIMAQ - Associação Brasileira da Indústria de Máquinas Equipamentos<br><br>
+                    ABINFER - Associação Brasileira Da Indústria De Ferramentais <br><br>
+                    Aço Peças Oliveira<br><br>
+                    Alameda Comunicação<br><br>
+                    Alexandre de Moura Duarte<br><br>
+                    Alexandre Salfatis<br><br>
+                    Alexandre Vasconcellos Rodrigues<br><br>
+                    Alltec Indústria de Materiais Compostos<br><br>
+                    Ana Carolina Lucchese<br><br>
+                    Ana Paula Bez Batti<br><br>
+                    ANEFBP – Associação do Núcleo de Excelência em Ferramentaria de Bragança Paulista – SP <br><br>
+                    Ariel Hamoui<br><br>
+                    Byr Componentes Para Moldes <br><br>
+                    Comexi do Brasil Ltda.<br><br>
+                    Daniel Kras<br><br>
+                    David Diesendruck<br><br>
+                    Eduardo Felipe Freire<br><br>
+                    Estúdio Colírio Estrategia e Design<br><br>
+                    Fabio Iguelka<br><br>
+                    Fabio Zsigmond<br><br>
+                    Ferdimat Indústria e Comércio de Máquinas Operatrizes Ltda<br><br>
+                    Ferramentaria Honório<br><br>
+                    Filler Ferramentas Ltda<br><br>
+                    Francisco Angelini<br><br>
+                  </p>
+                </div>
+
+              </div>
+              <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+                <div class="block_service">
+                  <p class="text-black">
+                    Francisco Angelini<br><br>
+                    Freios Controil<br><br>
                     GGD Metals<br><br>
                     Gisele Boschetti<br><br>
                     Henrique Rodrigeus Cardoso<br><br>
                     HP Embalagens Indústria e Comércio Ltda<br><br>
+                    HTCY Etiquetas<br><br>
+                    Humberto Djalma Nunes Puccinelli<br><br>
                     Incoe International Brasil Ltda. <br><br>
                     Injecom Industria e Comercio de Plasticos Ltda <br><br>
                     Insper Instituto de Ensino e Pesquisa<br><br>
@@ -644,6 +862,8 @@
                     Instituto Galo da Manhã<br><br>
                     José Eduardo Freire<br><br>
                     Jose Wilmar de Mello Justo Filho<br><br>
+                    Kenji Fukuda Yamashita<br><br>
+                    KMG Embalagens Ltda     <br><br>
                     Lakatos Termoformadoras<br><br>
                     Luiz Gross<br><br>
                     Marcelo Blay<br><br>
@@ -652,24 +872,28 @@
                     Maurice Braustein<br><br>
                     Mauro Berenholc<br><br>
                     Mecalor Soluções em Engenharia Térmica S.A.<br><br>
-                    Melon Innovation<br><br>
+                    Melon Inovation<br><br>
                     Mundo Maker Educação Ltda<br><br>
                     Nichibras Industria e Comercio LTDA<br><br>
-                  </p>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200" data-aos-once="true">
-              <div class="block_service">
-                  <p class="text-black">
+                    OSG Sulamericana de Ferramentas LTDA
                     Paulo César Camargo <br><br>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+                <div class="block_service">
+                  <p class="text-black">
                     Paulo Schonemberg<br><br>
                     Polimold Industrial S/A<br><br>
+                    Rafael Higushi<br><br>
                     Rallc Usinagem e Compostos Ltda<br><br>
+                    Randon Implementos e Participações S.A.<br><br>
                     Renato Sartor<br><br>
                     Ricardo Becker<br><br>
                     Ricardo Vinícius Kanitz<br><br>
                     Roberto Schur<br><br>
                     Stihl Ferramentas Motorizadas Ltda<br><br>
+                    Tarzia Comércio de Embalagens Ltda <br><br>
                     Taurus Armas S.A.<br><br>
                     TE Connectivity Brasil Ind. De Eletrônicos Ltda<br><br>
                     Tecnoserv Ltda<br><br>
@@ -677,14 +901,15 @@
                     Tres s Ferramentas de Precisao Ltda<br><br>
                     Uninjet Ind. e Com. de Plásticos Ltda<br><br>
                     Universidade Federal do Rio Grande do Sul<br><br>
+                    Via Brasil Transporte Aéro e Rodoviário <br><br>
                     Villares Metals S.A.<br><br>
                     Walmir Barroso Sociedade de Advogados<br><br>
                     Yaikoplastic<br><br>
                   </p>
+                </div>
               </div>
-            </div>
-            
-            <!-- <p class="text-black">
+
+              <!-- <p class="text-black">
                 Alexandre Vasconcellos Rodrigues<br>
                 Comexi do Brasil Ltda.<br>
                 Ferdimat Indústria e Comércio de Máquinas Operatrizes Ltda<br>
@@ -698,6 +923,7 @@
                 Walmir Barroso Sociedade de Advogados<br>
             </p> -->
 
+            </div>
           </div>
       </div>
     </section>
