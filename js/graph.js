@@ -5,8 +5,8 @@ let myChart = new Chart(ctx, {
     labels: ["6-12/abr", "13-19/abr", "20-26/abr", "27-03/jun", '4-10/jun', '11-17/jun', '18-24/jun', '25-31/jun', '1-7/jul'],
     datasets: [
       {
-        label: "numero de shields entregue",
-        data: [5500, 25100],
+        label: "Quantidade de shields entregue",
+        data: [5500, 18200],
         backgroundColor: "rgba(255, 99, 132, 0.2)",
         borderColor: "rgba(255, 99, 132, 1)",
 
