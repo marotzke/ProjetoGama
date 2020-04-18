@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="css/bootstrap-datepicker.css">
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/dynamic_circle.css">
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -150,48 +151,60 @@
           <a href="#mask-section" class="smoothscroll" style="color:white"><strong>Atenção!</strong> precisamos de matéria prima para proteção frontal das viseiras.</a>
         </div>       -->
     </header>
-
-
-
-
-    <section class="site-blocks-cover overflow-hidden bg-red">
+    <section class="site-blocks-cover bg-red">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 align-self-center text-center text-md-center">
+          <div class="col-md-12 align-self-center text-center text-md-center" style="margin-top: 60px;">
             <div class="intro-text">
+              <div class="home-accomplishments">
               <img src="images/GAMA_LOGO_BRANCO.svg " alt="Image" class="img-fluid cover-img"
-                style="max-width:50%;"><br><br>
-              <p class="text-white">Somos o <strong>Projeto GAMA</strong> - Grupo de Apoio aos Médicos e Agentes de
-                Saúde e a nossa missão é produzir <strong>Face Shields</strong> em larga escala para atender a alta
-                demanda em um curto período de tempo. Estamos trabalhando para produzir esse material e
-                <strong>DOAR</strong> para os hospitais que precisam. Estamos juntos nesta luta contra o
-                <strong>COVID-19, FIQUE EM CASA!</strong>
-              </p>
-              <!-- <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/tJdUoO" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">PRECISO DE FACE SHIELDS </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
-              <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right"
-                style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
-                data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">QUERO APOIAR
-              </a>
-              <script>
-                (function () {
-                  var qs, js, q, s, d = document,
-                    gi = d.getElementById,
-                    ce = d.createElement,
-                    gt = d.getElementsByTagName,
-                    id = "typef_orm_share",
-                    b = "https://embed.typeform.com/";
-                  if (!gi.call(d, id)) {
-                    js = ce.call(d, "script");
-                    js.id = id;
-                    js.src = b + "embed.js";
-                    q = gt.call(d, "script")[0];
-                    q.parentNode.insertBefore(js, q)
-                  }
-                })()
-              </script>
-              <br>
-              <a href="#mission-section" class="smoothscroll"><img src="images/down.svg" alt="Image"
-                  class="img-fluid cover-img" style="max-width:2%"></a>
+              style="width:50%;"> 
+              <div style="display: flex; justify-content: center; flex-direction: column; margin-top: 1em;">
+             
+              <div class="dynamic-progress">
+                  <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="progress-circle-back"
+                          cx="80" cy="80" r="60"></circle>
+                      <circle class="progress-circle-prog"
+                              cx="80" cy="80" r="60"></circle>
+                  </svg>
+                  <div class="progress-text" data-progress="0">0%</div>
+              </div>	
+              <a href="#accomplishments" class="smoothscroll"><span class="donation-count">Já doamos <span id="qnt-doacoes">0</span> shields</span></a>
+            </div>
+            </div>
+              <br><br>
+            <p class="text-white">Somos o <strong>Projeto GAMA</strong> - Grupo de Apoio aos Médicos e Agentes de
+              Saúde e a nossa missão é produzir <strong>Face Shields</strong> em larga escala para atender a alta
+              demanda em um curto período de tempo. Estamos trabalhando para produzir esse material e
+              <strong>DOAR</strong> para os hospitais que precisam. Estamos juntos nesta luta contra o
+              <strong>COVID-19, FIQUE EM CASA!</strong>
+            </p>
+            <!-- <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/tJdUoO" data-mode="drawer_right" style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">PRECISO DE FACE SHIELDS </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
+            <a class="typeform-share" href="https://matheusmarotzke.typeform.com/to/I482TP" data-mode="drawer_right"
+              style="display:inline-block;text-decoration:none;border: 2px solid #ed163c;;background-color:white;color:#ed163c;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+              data-hide-headers=true data-hide-footer=true data-submit-close-delay="3" target="_blank">QUERO APOIAR
+            </a>
+            <script>
+              (function () {
+                var qs, js, q, s, d = document,
+                  gi = d.getElementById,
+                  ce = d.createElement,
+                  gt = d.getElementsByTagName,
+                  id = "typef_orm_share",
+                  b = "https://embed.typeform.com/";
+                if (!gi.call(d, id)) {
+                  js = ce.call(d, "script");
+                  js.id = id;
+                  js.src = b + "embed.js";
+                  q = gt.call(d, "script")[0];
+                  q.parentNode.insertBefore(js, q)
+                }
+              })()
+            </script>
+            <br>
+            <a href="#mission-section" class="smoothscroll"><img src="images/down.svg" alt="Image"
+                class="img-fluid cover-img" style="max-width:2%"></a>
 
               <!-- <p class="mb-4">Produzimos Equipamentos de proteção individual para nossos heróis e heroínas nos hospitais.</p> -->
 
@@ -481,8 +494,267 @@
           </script>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <div class="parallax3"></div>
+
+
+    <section class="site-section" id="accomplishments">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-once="true">
+          <div class="col-lg-6 text-center heading-section mb-5">
+            <div>
+              <img src="images/icone_gama_vermelho.png" alt="Image" class="img-fluid cover-img"
+                style="max-width: 5%; margin-bottom: 20px">
+            </div>
+            <h2 class="text-black mb-2">QUEM JÁ AJUDAMOS!</strong></h2>
+            <p class="main-text">
+              O Projeto Gama está trabalhando para suprir os hospitais com os Face Shields o mais rapidamente possível e baseando as entregas em dados da <a href="https://bigdata-covid19.icict.fiocruz.br/" target="_blank" style="color: #ed163c;">Fiocruz</a>, <a href="https://brasil.io/dataset/covid19/caso" target="_blank" style="color: #ed163c;">brasil.io</a> e <a href="http://www.saude.sp.gov.br/cve-centro-de-vigilancia-epidemiologica-prof.-alexandre-vranjac/areas-de-vigilancia/doencas-de-transmissao-respiratoria/coronavirus-covid-19/" target="_blank" style="color: #ed163c;">CVE Prof. Alexandre Vranjac</a>.  Nesta lista estão as instituições já atendidas total ou parcialmente.
+                </p>
+                <!-- <div > -->
+                  <canvas id="grafico-entregas" ></canvas>
+                <!-- </div> -->
+                <!-- <p class="main-text"><strong>Doações:</strong></p> -->
+                <br>
+                <!-- <ul>
+                  <li class="main-text"><strong>Matéria prima para a produção dos Face Shields</strong> (PEAD, PA6.6, Santoprene 45A, PET-G, elásticos).</li>
+                  <li class="main-text"><strong>Empresas/Voluntários que possam ajudar com entrega e logística</strong>, bem como materiais para este fim (caixas de papelão, impressos e saco plástico). </li>
+                  <li class="main-text"><strong>Empresas/Voluntários que possam ajudar com corte de PET-G</strong> fundamental para a construção dos Face Shields</li>
+                  <li class="main-text"><strong>Empresas/Voluntários que possam ajudar com o manuseio</strong> e embalagem para entrega</li>
+                </ul> -->
+                <div class="show-first-few">
+                <table class="table table-striped" style="width:100%; ">
+                  <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>Cidade</th>
+                    <th>Quantidade</th>
+                  </thead>
+                  </tr>
+                  <tbody>
+                  <tr>
+                    <td> Autarquia de Hospitais Municipais da PMSP</td>
+                    <td>São Paulo</td>
+                    <td>1.520</td>
+                  </tr>
+                  <tr>
+                    <td> Corpo de Bombeiros</td>
+                    <td>Avaré</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td> Exército Taubaté</td>
+                    <td>Taubaté</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td> HC Unicamp</td>
+                    <td>Campinas</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital da Policia Militar</td>
+                    <td>São Paulo</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital Bragantino</td>
+                    <td>Bragança Paulista</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital da Irmandade</td>
+                    <td>São Paulo</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital das Clinicas FMUSP</td>
+                    <td>São Paulo</td>
+                    <td>520</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital de Tubarão</td>
+                    <td>Tubarão - SC</td>
+                    <td>320</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital e UPA de Caraguatatuba</td>
+                    <td>Caraguatatuba</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital Emílio Carlos - SUS</td>
+                    <td>Catanduva</td>
+                    <td>1.000</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital Extrema/Hospital de Pinhalzinho</td>
+                    <td>Extrema</td>
+                    <td>280</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital Francisca Júlia</td>
+                    <td>São José dos Campos</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital Geral de Vila Nova Cachoeirinha</td>
+                    <td>São Paulo</td>
+                    <td>80</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital Lourenço Jorge</td>
+                    <td>Rio de Janeiro</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital Salgado Filho</td>
+                    <td>Rio de Janeiro</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital São José do Rio Preto</td>
+                    <td>S. J. do Rio Preto</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital Souza Aguiar</td>
+                    <td>Rio de Janeiro</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital Universitário</td>
+                    <td>São Paulo</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital Universitário São francisco</td>
+                    <td>Bragança Paulista</td>
+                    <td>400</td>
+                  </tr>
+                  <tr>
+                    <td> Hospital São Paulo - HU - UNIFESP</td>
+                    <td>São Paulo</td>
+                    <td>480</td>
+                  </tr>
+                  <tr>
+                    <td> Polícia Militar</td>
+                    <td>Avaré</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td> Prefeitura de Boituva</td>
+                    <td>Boituva.</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td> Prefeitura de Caçapava</td>
+                    <td>Caçapava</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td> Prefeitura de Cotia</td>
+                    <td>Cotia</td>
+                    <td>180</td>
+                  </tr>
+                  <tr>
+                    <td> Prefeitura de Embú</td>
+                    <td>Embú das Artes</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td> Prefeitura de Ilhabela</td>
+                    <td>Ilhabela</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td> Prefeitura de S.J. dos Campos</td>
+                    <td>São José dos Campos</td>
+                    <td>550</td>
+                  </tr>
+                  <tr>
+                    <td> Prefeitura de Santo Anotnio do Pinhal</td>
+                    <td>Santo Antonio do Pinhal</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td> Prefeitura de Taubaté</td>
+                    <td>Taubaté</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td> Prefeitura de Tremembé</td>
+                    <td>Tremembé</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td> Prefeitura Guaratingueta</td>
+                    <td>Guaratingueta</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td> Prefeitura Municipal de Avaré</td>
+                    <td>Avaré</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td> Prefeitura Potim</td>
+                    <td>Potim</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td> Prefeituta de Piquete</td>
+                    <td>Piquete</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td> Prefitura de Cunha</td>
+                    <td>Cunha</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td> Pronto Socorro de Miracatu</td>
+                    <td>Miracatu</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td> Santa Casa de Avaré</td>
+                    <td>Avaré</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td> Santa Casa de Misericordia</td>
+                    <td>Bragança Paulista</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td> Santa Casa de Santo Amaro</td>
+                    <td>São Paulo</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td> Santa de Misericordia de Iatajubá, Hispíotal de Clinicas de Itajubá, Hospital São Vicente de paula</td>
+                    <td>Itajubá/Lambari - MG</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td> Secretaria Municipal Saúde de Epitácio</td>
+                    <td>Epitácio</td>
+                    <td>230</td>
+                  </tr>
+                  <tr>
+                    <td> Diversos Hospitals RS</td>
+                    <td>Diversas</td>
+                    <td>13.100</td>
+                  </tr>
+                </tbody>
+
+                </table>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   <section class="site-section" id="help-section">
     <div class="container">
@@ -643,33 +915,35 @@
 
             </div>
           </div>
-        </section>
+      </div>
+    </section>
 
 
-        <p class="copyright text-center justify-content-center"><small>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright Projeto Gama &copy;<script>
-              document.write(new Date().getFullYear());
-            </script> All rights reserved | This template is made with <i class="icon-heart text-danger"
-              aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
+    <p class="copyright text-center justify-content-center"><small>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright Projeto Gama &copy;<script>
+          document.write(new Date().getFullYear());
+        </script> All rights reserved | This template is made with <i class="icon-heart text-danger"
+          aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
 
-      </div> <!-- .site-wrap -->
+  </div> <!-- .site-wrap -->
 
-      <script src="js/jquery-3.3.1.min.js"></script>
-      <script src="js/jquery-ui.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/jquery.countdown.min.js"></script>
-      <script src="js/jquery.easing.1.3.js"></script>
-      <script src="js/aos.js"></script>
-      <script src="js/jquery.fancybox.min.js"></script>
-      <script src="js/jquery.sticky.js"></script>
-      <script src="js/isotope.pkgd.min.js"></script>
-      <script src="js/main.js"></script>
-
-
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="js/graph.js"></script>
 </body>
 
 
