@@ -1,6 +1,6 @@
 function dynamicCircle(value) {
   let circle = document.querySelector(".progress-circle-prog");
-  circle.style.strokeDasharray = value * 4.65 + " 999";
+  circle.style.strokeDasharray = value * 3.8 + " 999";
   let text = document.querySelector(".progress-text");
   let from = document
     .querySelector(".progress-text")
@@ -20,6 +20,7 @@ function dynamicCircle(value) {
 }
 
 function animateValue(id, start, end, duration) {
+  formatCurrent = '';
   let range = end - start;
   let current = start;
   let increment = end > start ? 150 : -1;
@@ -30,11 +31,21 @@ function animateValue(id, start, end, duration) {
     obj.innerHTML = current;
     if (current == end) {
       clearInterval(timer);
+      formatCurrent = numberWithCommas(current);
+      obj.innerHTML = formatCurrent;
     }
   }, stepTime);
 }
 
+function numberWithCommas(x) {
+  x = x.toString();
+  var pattern = /(-?\d+)(\d{3})/;
+  while (pattern.test(x))
+      x = x.replace(pattern, "$1,$2");
+  return x;
+}
+
 window.onload = () => {
-  animateValue("qnt-doacoes", 0, 30600, 1000);
-  dynamicCircle((30600 / 300000) * 100);
+  animateValue("qnt-doacoes", 0, 23700, 1000);
+  dynamicCircle((23700 / 300000) * 100);
 };
