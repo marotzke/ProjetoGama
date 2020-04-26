@@ -6,7 +6,7 @@ let myChart = new Chart(ctx, {
     datasets: [
       {
         label: "Quantidade de shields entregue",
-        data: [5500, 18200],
+        data: [5500, 18200, 21820],
         backgroundColor: "rgba(255, 99, 132, 0.2)",
         borderColor: "rgba(255, 99, 132, 1)",
 
