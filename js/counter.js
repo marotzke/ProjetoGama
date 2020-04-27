@@ -23,15 +23,15 @@ function animateValue(id, start, end, duration) {
   formatCurrent = '';
   let range = end - start;
   let current = start;
-  let increment = end > start ? 150 : -1;
+  let increment = end > start ? 300 : -1;
   let stepTime = Math.abs(Math.floor(duration / range));
   let obj = document.getElementById(id);
   let timer = setInterval(function () {
     current += increment;
     obj.innerHTML = current;
-    if (current == end) {
+    if (current >= end) {
       clearInterval(timer);
-      formatCurrent = numberWithCommas(current);
+      formatCurrent = numberWithCommas(end);
       obj.innerHTML = formatCurrent;
     }
   }, stepTime);
@@ -46,6 +46,6 @@ function numberWithCommas(x) {
 }
 
 window.onload = () => {
-  animateValue("qnt-doacoes", 0, 23700, 1000);
-  dynamicCircle((23700 / 275000) * 100);
+  animateValue("qnt-doacoes", 0, 45520, 1000);
+  dynamicCircle((45520 / 275000) * 100);
 };
