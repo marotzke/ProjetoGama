@@ -1,6 +1,7 @@
 const playMp4 = () => {
   let vid = document.querySelector("#teaser-vid");
   if (vid.hasAttribute("data-played", true)) {
+    vid.play();
     vid.muted = true;
   }
   if (vid.autoplay === false) {
@@ -12,8 +13,7 @@ const playMp4 = () => {
 const pauseMp4 = () => {
   let vid = document.querySelector("#teaser-vid");
   if (vid.autoplay === true) {
-    vid.autoplay = false;
-    vid.load();
+    vid.pause();
     vid.setAttribute("data-played", true);
   }
 };
