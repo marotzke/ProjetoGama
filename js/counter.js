@@ -23,7 +23,7 @@ function animateValue(id, start, end, duration) {
   formatCurrent = '';
   let range = end - start;
   let current = start;
-  let increment = end > start ? 400 : -1;
+  let increment = end > start ? 700 : -1;
   let stepTime = Math.abs(Math.floor(duration / range));
   let obj = document.getElementById(id);
   let timer = setInterval(function () {
@@ -46,6 +46,6 @@ function numberWithCommas(x) {
 }
 
 window.onload = () => {
-  animateValue("qnt-doacoes", 0, 79418, 1000);
-  dynamicCircle((79418 / 275000) * 100);
+  animateValue("qnt-doacoes", 0, 144856, 1000);
+  dynamicCircle((144856 / 275000) * 100);
 };
